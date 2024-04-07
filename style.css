@@ -108,3 +108,44 @@ table, th, td {
       .col6 {
         background-color: #5e6aa6;
       }
+
+           footer {
+              background-color: #230956;
+              color: #fff;
+              padding: 20px;
+              text-align: center;
+            }
+      
+            footer a {
+              color: #fff;
+              text-decoration: none;
+              display: block;
+              /* Para que los enlaces estén uno debajo del otro */
+              margin-bottom: 10px;
+              /* Espacio entre los enlaces */
+            }
+      
+            footer a:hover {
+              text-decoration: underline;
+            }
+            
+      
+            .contact-info {
+              text-align: left;
+              /* Alineación a la izquierda */
+            }
+
+            .sections {
+              display: flex; /* Alinea las secciones una al lado de la otra */
+          }
+
+          .section {
+            margin-right: 300px;
+        }
+
+        .mi_lista {
+          list-style-type: none;
+      }
+
+            
+          
