@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,116 +14,68 @@
       href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/slider.js"></script>
 
     <title>Energía Verde</title>
   </head>
   <body>
     <header class="bloque1">
-      <div>
+      <div class="titulo">
         <h1 class="exo-1">GREEN ENERGY</h1>
       </div>
     </header>
+    
     <nav>
       <ul>
-        <li><a href="#section1">Inicio</a></li>
-        <li><a href="#section2">Quienes somos?</a></li>
-        <li><a href="#section3">Productos</a></li>
-        <li><a href="#section4">Servicios</a></li>
-        <li><a href="#section5">Contacto</a></li>
+        <li><a href="#presentacion">Inicio</a></li>
+        <li><a href="#Contenido1">Quienes somos?</a></li>
+        <li><a href="#contenido2">Productos</a></li>
+        <li><a href="#contenido3">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
     <main>
       aqui comienza el main
-      <section id="section1">
-        Section 1
-
-        <h1>Aca comienza la aventura!!!!...</h1>
-        <h2>Nos ponemos en marcha Equipo!!!</h2>
-        <table style="border: darkblue">
-          <tr>
-            <th>Nombre</th>
-            <th>email</th>
-          </tr>
-          <tr>
-            <td>Enrique Sifontes</td>
-            <td>easr97@hotmail.com</td>
-          </tr>
-          <tr>
-            <td>vanessa Alfonzo</td>
-            <td>vanessa.alfonzolara@gmail.com</td>
-          </tr>
-          <tr>
-            <td>Sebastian Garcia</td>
-            <td>spgarciaa@gmail.com</td>
-          </tr>
-        </table>
-
-        <table>
-          <tr>
-            <td colspan="2">PALETA</td>
-          </tr>
-          <tr>
-            <td>color1</td>
-            <td class="col1">#eefcad</td>
-          </tr>
-          <tr>
-            <td>color2</td>
-            <td class="col2">#c7f672</td>
-          </tr>
-          <tr>
-            <td>color3</td>
-            <td class="col3">#68cb8a</td>
-          </tr>
-          <tr>
-            <td>color4</td>
-            <td class="col4">#2c115e</td>
-          </tr>
-          <tr>
-            <td>color5</td>
-            <td class="col5">#50318f</td>
-          </tr>
-          <tr>
-            <td>color6</td>
-            <td class="col6">#5e6aa6</td>
-          </tr>
-        </table>
-        <div>
-          <h1>Estamos pensando en como armar la sección</h1>
-          <img
-            src="/recursos/img/pensando.jpeg"
-            alt="Sección en construcción"
-          />
+      <div class="slides">
+          <section id="presentacion">
+            <span>Conviviendo con el medioambiente</span>
+            <video autoplay loop muted style="width: 100%; height: 100%;">
+              <source src="./recursos/media/9790069-sd_960_540_30fps.mp4"  type="video/mp4" alt="Solar Roof" >
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+          </section>
+          <section id="Contenido1">
+            <span>Un, muy breve, que hacemos</span>
+            <img src="./recursos/Img/375594-Longitude_Exterior_2019_02-c42cc7-original-1610392719.png" alt="avion"
+              style="width: 100%; height: 100%;">
+          </section>
+          <section id="contenido2">
+            <span>Fotos / videos / referencias de producto</span>
+            <img src="./recursos/Img/36295757e8491a3bf818a30118529d71.jpg" alt="Campo Golf"
+              style="width: 100%; height: 100%;">
+          </section>
+          <section id="contenido3">
+            <span>Nuestras marcas</span>
+            <img src="./recursos/Img/Blackangel.jpg" alt="peces" style="width: 100%; height: 100%;">
+          </section>
+          <section id="contacto">
+            <span>Una forma de contacto / Solicite mas información / etc.</span>
+            <img src="./recursos/Img/Desktop-HD-Nature-Wallpapers-1.jpg" alt="naturaleza" style="width: 100%; height: 100%;">
+          </section>
+          <section id="pie">
+            <span class="PIE">
+              <div class="flex-box">
+                <p>UN PIE DE PAGINA DONDE PONGAMOS ENLACES A NUESTRAS PAGINAS DE APLICACIONES</p>
+                <p>-Todavía no se como hacer que para que se pare en el final de esta sección-</p>
+              </div>
+            </span>
         </div>
-      </section>
-      <section id="section2">Section 2
-        <h1>Estamos pensando en como armar la sección</h1>
-        <img
-          src="/recursos/img/pensando.jpeg"
-          alt="Sección en construcción"
-        />
-      </section>
-      <section id="section3">Section 3
-        <h1>Estamos pensando en como armar la sección</h1>
-        <img
-          src="/recursos/img/pensando.jpeg"
-          alt="Sección en construcción"
-        />
-      </section>
-      <section id="section4">Section 4
-        <h1>Estamos pensando en como armar la sección</h1>
-        <img
-          src="/recursos/img/pensando.jpeg"
-          alt="Sección en construcción"
-        />
-      </section>
-      <section id="section5">Section 5
-        <h1>Estamos pensando en como armar la sección</h1>
-        <img
-          src="/recursos/img/pensando.jpeg"
-          alt="Sección en construcción"
-        />
-      </section>
+        </section>
+    </div>
     </main>
     <footer>Aquí el footer</footer>
+    <script>
+      var mySlider = slider('.slides');
+    </script>
   </body>
 </html>
