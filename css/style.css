@@ -162,7 +162,7 @@ html {
 }
 
 section > span {
-  position: absolute;
+ 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -243,3 +243,61 @@ body.slider__body {
 .slides{
   margin-top: 15%;
 }
+
+footer {
+  
+  background-color: #230956;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  /* Para que los enlaces estén uno debajo del otro */
+  margin-bottom: 10px;
+  /* Espacio entre los enlaces */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+.contact-info {
+  text-align: left;
+  /* Alineación a la izquierda */
+}
+
+
+.sections {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+
+.section {
+  
+margin-right: 300px;
+
+}
+
+.mi_lista {
+list-style-type: none;
+}
+.flex-box{
+  display: flex; /* Alinea las secciones una al lado de la otra */
+  font-family: sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+.pie1{
+  z-index: 5;
+}
+
