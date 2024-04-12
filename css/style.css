@@ -240,9 +240,10 @@ body.slider__body {
 .slides{
   margin-top: 15%;
 }
+/*Desde aqui la section footer*/
 
+/*Color de fondo y letras blancas*/
 footer {
-  
   background-color: #230956;
   color: #fff;
   padding: 20px;
@@ -250,6 +251,7 @@ footer {
   width: 100%;
 }
 
+/*Color de los enlaces*/
 footer a {
   color: #fff;
   text-decoration: none;
@@ -259,14 +261,15 @@ footer a {
   /* Espacio entre los enlaces */
 }
 
+/*Esto es para colocarle una linea a los link cuando el cursor se sobrepone sobre el*/
 footer a:hover {
   text-decoration: underline;
 }
 
-
+/* Alineación a la izquierda */
 .contact-info {
   text-align: left;
-  /* Alineación a la izquierda */
+  
 }
 
 
@@ -305,3 +308,35 @@ text-align: center;
   width: 400px;
   height: 200px;
 }
+
+/*Clase para la letra del quienes somos*/
+.hind-siliguri-medium {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Esto es para posicionar el quienes somos sobre la imagen del avion*/
+.centrarQuinesSomos {
+  position: absolute; 
+  top: 200%; left: 50%; 
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  text-align: center;
+}
+
+/*Esto es para posicionar el quienes somos sobre la imagen del avion*/
+
+.centrarPQuienesSomos {
+  color:rgb(20, 40, 21); 
+  position: absolute; 
+  top: 230%; left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: justify;
+}
+
+/*letra pie de página*/
+.exo-2 {
+  font-size: 20px;
+}
+
