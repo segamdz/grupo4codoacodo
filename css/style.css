@@ -322,21 +322,39 @@ text-align: center;
   top: 200%; left: 50%; 
   transform: translate(-50%, -50%); 
   text-align: center;
-  text-align: center;
 }
 
 /*Esto es para posicionar el quienes somos sobre la imagen del avion*/
 
 .centrarPQuienesSomos {
-  color:rgb(20, 40, 21); 
+  color:#003987;
   position: absolute; 
-  top: 230%; left: 50%; 
+  top: 210%; left: 50%; 
   transform: translate(-50%, -50%);
   text-align: justify;
+  margin-top: 10px;
+  
+}
+
+.exo-4 {
+  font-size: 18px;
+  width: 80%;
 }
 
 /*letra pie de página*/
 .exo-2 {
   font-size: 20px;
+}
+
+.exo-3 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-size: 60px;
+  font-style: normal;
+  color: #003987;
+  margin-top: -150px;
+  text-shadow: #f8fec2 2px 2px;
+ /* display: inline-block;*/
 }
 
