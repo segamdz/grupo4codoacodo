@@ -175,6 +175,10 @@ nav {
     left: 15px;
     filter: drop-shadow(0px 0px 12px #ffffff)
   }
+  .Map{
+    width: 400px;
+    height: 200px;
+  }
   
 @media (min-width: 1024px)  {
   .exo-1{
@@ -219,6 +223,10 @@ nav {
   
 .submenu_prod li:hover a {
   width: 85%;
+}
+.Map{
+  width: 200px;
+  height: 100px;
 }
  }
  
@@ -425,7 +433,13 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+footer p {
+  font-size: 2vw;
+}
+footer h3 {
+  font-size: 1.5vw;
 
+}
 
 .contact-info {
   text-align: left;
@@ -464,7 +478,17 @@ text-align: center;
 .pie1 h3{
   text-align: center;
 }
-.Map{
-  width: 400px;
-  height: 200px;
+
+.colaboradores:hover .mi_lista {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
+}
+
+.mi_lista {
+  display: none;
 }
