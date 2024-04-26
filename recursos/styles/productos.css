@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+.header-site {
+	display: flex;
+	width: 100%;
+	height: 10vh;
+	background-repeat: repeat-x;
+	background-color: #fff;
+	margin: 0;
+	float: left
+}
+
+root{
+	font-size: 16px;
+	overflow: hidden;
+}
+
+#izquierda {
+	width: 18%
+}
+
+.overlay {
+  height: 81vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 10vh;
+  left: 0;
+  background-color: blue;
+  background-color: blue;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+	height: 100%;
+  text-align: justify;
+  margin-top: 2vh;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: lg 1.5rem md 1rem sm .7rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 2vh;
+  right: 4.5vw;
+  font-size: 3rem;
+}
+
+@media screen and (max-height: 450vh) {
+  .overlay a {font-size: 1em}
+  .overlay .closebtn {
+  font-size: 3rem;
+  top: 2vh;
+  right: 3.5 vw;
+  }
+}
+
+#carouselProductos {
+	width: 80%;
+	height: 100%
+}
+
+#derecha {
+	width: 2%
+}
+
+.logo {
+	width: 40%;
+	height: 100%
+}
+
+.header-top {
+	width: 40%;
+	height: 100%
+}
+
+.menutop-container {
+	width: 100%;
+	height: 50%
+}
+
+.menunav-container {
+	width: 100%;
+	height: 50%
+}
+
+.products {
+	display: block;
+	padding: 8px;
+	font-weight: 700;
+}
+
+.TopNav li {
+	float:none;
+}
+
+.TopNav li a:hover {
+	background-color: #111
+}
+
+.SubPro a {
+	color: rgb(197, 197, 24);
+}
+
+.container-Flex {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw
+}
+
+.wrapper {
+	display: flex;
+	height: 80%;
+	width: 100%
+}
+
+.login {
+	width: 20%;
+	height: 100%;
+	text-align: right;
+	font-size: 12px;
+	float: right;
+	color: #fff;
+	line-height: 22px;
+	text-shadow: 1px 1px 3px #4a4a4a
+}
+
+.login a {
+	color: #fff;
+	font: size 1.17rem;
+	text-decoration: none
+}
+
+.login a:hover {
+	color: #d1d2d2;
+	font-size: 1.17rem;
+	text-decoration: none
+}
+
+
+
+.footer-navlinks {
+	padding-right: 45px;
+	max-width: 180px;
+	float: right
+}
+
+.footer-title {
+	height: 18px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #f8f8e5;
+	margin-bottom: 11px
+}
+
+.footer-container {
+	width: 100%;
+	background-color: #000;
+	padding-bottom: 15px;
+	clear: both
+}
+
+.footer {
+	width: 100vw;
+	padding: 20px 0;
+	margin: auto;
+	clear: both
+}
+
+.footer a {
+	color: #fff;
+	padding: 0 12px;
+	text-decoration: none
+}
+
+.footer a:hover {
+	color: #fff;
+	padding: 0 12px
+}
+

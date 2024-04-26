@@ -1,156 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script src="./js/slider.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurSolar</title>
+  <link href="./recursos/Images/icons/planeta.ico" rel="shortcut icon" type="image/x-icon" />
+  <!-- diseño del slider -->
+  <link rel="stylesheet" href="./recursos/styles/slider.css">
+  <link rel="stylesheet" href="./recursos/styles/footer.css">
+  <!--NavBar flotante y transparente.-->
+  <link rel="stylesheet" type="text/CSS" href="./recursos/styles/navflo.css">
 
-    <title>Energía Verde</title>
-  </head>
+</head>
 
-  <body>
-    <header class="bloque1">
-      <div class="titulo">
-        <h1 class="exo-1">GREEN ENERGY</h1>
-      </div>
+<body>
+  <div class="flex-container">
+    <header>
+      <!--         
+        <nav>UNA BARRA DE NAVEGACION FLOTANTE Y -¿POR QUE NO?- TRANSPARENTE</nav> 
+        <div class="logo">
+          <h2>SurSolar</h2>
+        </div>
+        <div class="navigation">
+          <input type="checkbox" id="nav-checkbox">
+          <label for="nav-checkbox" class="nav-toggle">
+            <img src="open.png" alt="open menu" class="open">
+            <img src="close.png" alt="close menu" class="close">
+          </label>
+          <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        -->
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="#presentacion">Inicio</a></li>
-        <li><a href="#Contenido1">Quienes somos?</a></li>
-        <li><a href="#contenido2">Productos</a></li>
-        <li><a href="#contenido3">Servicios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <main>
-      aqui comienza el main
+    <body>
+      <!--         
+        <div class="hero">  
+        -->
       <div class="slides">
         <section id="presentacion">
-          <span>Conviviendo con el medioambiente</span>
-          <video autoplay loop muted style="width: 100%; height: 100%">
-            <source
-              src="./recursos/media/9790069-sd_960_540_30fps.mp4"
-              type="video/mp4"
-              alt="Solar Roof"
-            />
-            Tu navegador no soporta la etiqueta de video.
+          <span>Aqui el video de entrada</span>
+          <!--  
+            <img src="./recursos/Images/Tesla Solar Roof.jpg" alt="Solar Roof" style="width: 100%; height: 100%;">
+             -->
+          <video width="100%" height="100%" autoplay muted>
+            <source src="./recursos/media/9790069-sd_960_540_30fps.mp4" type="video/mp4">
           </video>
         </section>
-        <section id="Contenido1">
+        <section id="nosotros">
           <span>Un, muy breve, que hacemos</span>
-          <img
-            src="./recursos/img/planeta.jpg"
-            alt="avion"
-            style="position: relative; width: 100%; height: 100%;"
-          />
-            <h1  class=" exo-3 centrarQuinesSomos" >Quienes somos</h1>
-            <p class= "hind-siliguri-medium centrarPQuienesSomos exo-4">En un mundo en constante búsqueda de soluciones sostenibles, nosotros somos más que un grupo de individuos. Somos agentes del cambio, defensores del planeta y apasionados por un futuro más verde. Nos identificamos como un equipo comprometido con la causa de preservar el medio ambiente mientras ofrecemos productos de energía innovadores.
-              Somos una comunidad unida por una visión compartida: transformar la forma en que se genera y consume energía. Nos esforzamos por ofrecer alternativas que no solo sean eficientes, sino que también sean respetuosas con nuestro entorno. Cada uno de nosotros aporta una pieza única al rompecabezas, ya sea a través de la investigación y el desarrollo de nuevas tecnologías, la educación sobre prácticas energéticas sostenibles o la conexión con comunidades locales para promover un cambio positivo.
-              Nos destacamos no solo por los productos que vendemos, sino por el impacto que generamos en el mundo que habitamos. Desde paneles solares hasta turbinas eólicas, nuestra gama de productos está diseñada para ofrecer soluciones prácticas y amigables con el medio ambiente. Nos enorgullece no solo proporcionar energía, sino también preservar los recursos naturales y reducir nuestra huella de carbono.
-              Nuestra identidad va más allá de ser vendedores de productos de energía. Somos guardianes del futuro, trabajando incansablemente para asegurar que las generaciones venideras hereden un mundo próspero y sostenible. Nos comprometemos a seguir avanzando, innovando y colaborando en pos de un mañana más brillante y limpio para todos.</p>
-          <section id="section3">Section 3
-            <h1>Estamos pensando en como armar la sección</h1>
-            <img
-              src="/recursos/img/pensando.jpeg"
-              alt="Sección en construcción"
-            />
-          </section>
+          <img class="vertical-center" src="./recursos/Images/375594-Longitude_Exterior_2019_02-c42cc7-original-1610392719.png" alt="avion" style="width: 100%; height: auto;">
         </section>
-        <section id="contenido2">
+        <section id="Productos">
           <span>Fotos / videos / referencias de producto</span>
-          <img
-            src="./recursos/Img/36295757e8491a3bf818a30118529d71.jpg"
-            alt="Campo Golf"
-            style="width: 100%; height: 100%"
-          />
+          <a href="./recursos/html/Productos.html">
+            <img src="./recursos/Images/Producto.png" alt="Productos" title="Ir a Productos" style="width: 100%; height: auto;">
+          </a>
         </section>
-        <section id="contenido3">
+        <section id="Servicios">
           <span>Nuestras marcas</span>
-          <img
-            src="./recursos/Img/Blackangel.jpg"
-            alt="peces"
-            style="width: 100%; height: 100%"
-          />
+          <img src="./recursos/Images/Blackangel.jpg" alt="peces" style="width: 100%; height: auto;">
         </section>
         <section id="contacto">
           <span>Una forma de contacto / Solicite mas información / etc.</span>
-          <img
-            src="./recursos/Img/Desktop-HD-Nature-Wallpapers-1.jpg"
-            alt="naturaleza"
-            style="width: 100%; height: 100%"
-          />
+          <img src="./recursos/Images/Desktop-HD-Nature-Wallpapers-1.jpg" alt="naturaleza"
+            style="width: 100%; height: auto;">
         </section>
-        <section class="pie1">
-          <div class="flex-box">
-            <footer>
-              <h2 class="exo-1" style="color:aliceblue;" >Porque nos merecemos un mundo mejor<br>Green Energy</h2>
-              <div class="cuadro_info_footer">
-                <div class="sections exo-2">
-                  <!-- <section class="section">
-                    <h3>Explora más</h3>
-                    <ul class="mi_lista">
-                      <li><a href="#presentacion">Inicio</a></li>
-                      <li><a href="#Contenido1">Quienes somos?</a></li>
-                      <li><a href="#contenido2">Productos</a></li>
-                      <li><a href="#contenido3">Servicios</a></li>
-                      <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                  </section> -->
-
-                  <section class="section">
-                    <h3>Atención al Cliente</h3>
-                    <ul class="mi_lista">
-                      <li>
-                        Teléfono: <a href="tel:+123456789">123-456-789</a>
-                      </li>
-                      <li>Dirección: Mendoza, Argentina</li>
-                    </ul>
-                  </section>
-                  <section>
-                    <h3>Aqui estamos!</h3>
-                    <iframe
-                      class="Map"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21738.74399508465!2d-68.84359362443729!3d-32.890869355653656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e093ec45179bf%3A0x205a78f6d20efa3a!2sMendoza%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1712663790919!5m2!1ses-419!2sar"
-                      width="600"
-                      height="450"
-                      style="border: 0"
-                      allowfullscreen=""
-                      loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                  </section>
-                  <section class="section">
-                    <h3>Nuestros Colaboradores..</h3>
-                    <ul class="mi_lista">
-                      <li><a href="https://www.linkedin.com/in/vanessa-alfonzo-1384bb215/">
-                        <img src="./recursos/img/icons8-logotipo-de-linkedin.gif" alt="" style="width: 20px; height: 20px; vertical-align: middle;">  Vanessa</a></li>
-                      <li><a href="https://www.linkedin.com/in/sebastian-garcia-aa9ab331/">
-                        <img src="./recursos/img/icons8-logotipo-de-linkedin.gif" alt="" style="width: 20px; height: 20px; vertical-align: middle;">  Sebastian</a></li>
-                      <li><a href="https://www.linkedin.com/in/syssfc/">
-                        <img src="./recursos/img/icons8-logotipo-de-linkedin.gif" alt="" style="width: 20px; height: 20px; vertical-align: middle;">  Enrrique</a></li>
-                    </ul>
-                  </section>
+        <section id="pie">
+          <div class="flex-box-line">
+            <div class="footer-nav-container">
+              <div class="footer-nav">
+                <div class="footer-navlinks">
+                  <div class="footer-title">
+                    <a href="#" class="pres">
+                      Home
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-navlinks">
+                  <div class="footer-title">
+                    <a href="#" class="noso">
+                      Nosotros
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-navlinks">
+                  <div class="footer-title">
+                    <a href="#" class="prod">
+                      Productos
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-navlinks">
+                  <div class="footer-title">
+                    <a href="#" class="serv">
+                      Servicios
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-navlinks">
+                  <div class="footer-title">
+                    <a href="#" class="cont">
+                      Contáctenos
+                    </a>
+                  </div>
                 </div>
               </div>
-            </footer>
+            </div>
+            <div class="footer-nav-container">
+              <div class="flex-box-line">
+                <div class="copyright">
+                  © 2024 SurSolar All rights reserved.
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
-    </main>
-  </body>
+
+      <!--  <h1>SySS Coding</h1>
+          <h3>Aprendiendo HTML CSS JS</h3>
+          <a href="#">Suscri</a> -->
+
+  </div>
+  <script src="./recursos/scripts/slider.js"></script>
+  <script>
+    var mySlider = slider('.slides');
+  </script>
+  <!--   
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("cinta");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.scrollY > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+  -->
+  <!--
+  <script src="./../scripts/jquery-3.7.1.min.js"></script>
+  -->
+</body>
+
 </html>

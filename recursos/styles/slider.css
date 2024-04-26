@@ -1,0 +1,120 @@
+body,
+html {
+  height: 100%;
+}
+
+#presentacion {
+  background: linear-gradient(225deg, #ffc27d, #ff8e93);
+}
+
+#Contenido1 {
+  background: linear-gradient(#f3defc, #63a3e6);
+}
+
+#Productos {
+  background: linear-gradient(#d2fcad, #22eaeb);
+}
+
+#Servicios {
+  background: linear-gradient(#f0bed4, #a163f5);
+}
+
+#contacto {
+  background: linear-gradient(#65cce1, #6365ec);
+}
+
+#pie {
+  background: black;
+  height: 50%;
+}
+
+section>span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5vw;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.img-vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.PIE {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: yellow;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-box-line {
+  display: flex;
+  flex-direction: row;
+}
+
+body.slider__body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.slider__container {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.slider__page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__indicators {
+  position: fixed;
+  left: 18px;
+  top: 50%;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.slider__indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px 0;
+  border-radius: 100px;
+  background-color: #fff;
+  cursor: default;
+}
+.slider__indicator--active {
+  opacity: 0.3;
+}

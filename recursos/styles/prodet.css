@@ -1,0 +1,157 @@
+:root {
+  font-size: 100%;
+}
+
+.grid-container {
+  display: grid;
+  height: 98vh;
+  grid-template-columns: repeat(10, 9.8vw);
+  grid-template-rows: repeat(10, 9.8vh);
+  background-color: rgba(34, 34, 150, 0.404);
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgba(43, 43, 240, 0.404), rgba(132, 243, 41, 0.404));
+}
+
+.grid-container>div {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.logo {
+  grid-area: 1 / 1 / 2 / 5;
+  display: inline-flex;
+}
+
+.logotipo {
+  max-width: auto;
+  max-height: 100%;
+  ;
+}
+
+.logo img {
+  float: left;
+  height: 80%;
+  max-height: 15vh;
+  object-fit: contain;
+}
+
+
+.navbar {
+  grid-area: 1 / 5 / 2 / 9;
+}
+
+.navbar>h1 {
+  font-size: 3.5rem;
+  margin: auto;
+  padding-top: 1vh;
+}
+
+.login {
+  grid-area: 1 / 9 / 2 / 10;
+}
+
+.lateral {
+  grid-area: 2 / 1 / 10 / 3;
+  background-color: cadetblue;
+}
+
+.pancarta {
+  grid-area: 2 / 3 / 5 / 10;
+  background-color: beige;
+}
+
+.pancarta img {
+  width: 100%;
+  height: 100%;
+}
+
+.vitrina {
+  grid-area: 5 / 3 / 10 / 10;
+  background-color: burlywood;
+}
+
+.grid-container-II {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, auto);
+  background-color: rgba(34, 34, 150, 0.404);
+  /* For browsers that do not support gradients */
+}
+
+.casillas {
+  display: grid;
+  height: 95%;
+  font-size: 1rem;
+  grid-template-rows: repeat (5, auto);
+}
+
+.casillas .foto {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  max-height: 20vh;
+  max-width: 20vw;
+
+}
+
+.casillas .foto > img{
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  
+}
+
+.casillas leyenda {
+  grid-row-start: 5;
+  grid-row-end: 5;
+  height: 20%;
+  color: white;
+  background-color:grey;
+}
+
+
+.item6 {
+  grid-area: 2 / 10 / 10 / 10;
+}
+
+.footer {
+  grid-area: 10 / 1 / 10 / 10;
+}
+
+.breadcrumbs {
+  height: 20%;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: normal;
+  float: left;
+  padding-top: 2vh;
+  text-align: left;
+  padding-left: 2vw;
+
+}
+
+.leftnav-wrapper {
+  height: 100%;
+  width: 100%;
+  padding-top: 2.4vh;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #292829;
+  /*background-image:url(../images/bg-leftnav.gif);*/
+  background-repeat: repeat-x;
+  /* background-color:#ffffff; */
+  float: left;
+}
+
+.leftnav-wrapper h2 {
+  max-width: 90%;
+  font-size: 2.5rem;
+  margin: auto;
+  padding-top: 1vh;
+}
+
+.leftnav-links2 {
+  margin: 2vh 1vw 2vh 1vw;
+  color: #000000;
+  text-align: left;
+  float: left;
+}
