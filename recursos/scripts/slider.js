@@ -1,19 +1,20 @@
-var slider = function (sliderElement) {
+let slider = function (sliderElement) {
 
-  var pages = [];
-  var currentSlide = 1;
-  var isChanging = false;
-  var keyUp = { 38: 1, 33: 1 };
-  var keyDown = { 40: 1, 34: 1 };
+  let pages = [];
+  let currentSlide = 1;
+  let isChanging = false;
+  let keyUp = { 38: 1, 33: 1 };
+  let keyDown = { 40: 1, 34: 1 };
 
-  var init = function () {
+  let init = function () {
 
     document.body.classList.add('slider__body');
 
     // control scrolling
     whatWheel = 'onwheel' in document.createElement('div') ? 'wheel' : document.onmousewheel !== undefined ? 'mousewheel' : 'DOMMouseScroll';
     window.addEventListener(whatWheel, function (e) {
-      var direction = e.wheelDelta || e.deltaY;
+      console.log("control scrolling");
+      let direction = e.wheelDelta || e.deltaY;
       if (direction > 0) {
         changeSlide(-1);
       } else {
@@ -23,6 +24,7 @@ var slider = function (sliderElement) {
 
     // allow keyboard input
     window.addEventListener('keydown', function (e) {
+      console.log("allow keyboard input");
       if (keyUp[e.keyCode]) {
         changeSlide(-1);
       } else if (keyDown[e.keyCode]) {
@@ -32,30 +34,34 @@ var slider = function (sliderElement) {
 
     // page change animation is done
     detectChangeEnd() && document.querySelector(sliderElement).addEventListener(detectChangeEnd(), function () {
+      console.log("page change animation is done");
       if (isChanging) {
         setTimeout(function () {
           isChanging = false;
           window.location.hash = document.querySelector('[data-slider-index="' + currentSlide + '"]').id;
+          console.log("window.location.hash ", window.location.hash);
         }, 400);
       }
     });
 
     // set up page and build visual indicators
     document.querySelector(sliderElement).classList.add('slider__container');
-    var indicatorContainer = document.createElement('div');
+    console.log("set up page and build visual indicators");
+    let indicatorContainer = document.createElement('div');
     indicatorContainer.classList.add('slider__indicators');
 
-    var index = 1;
+    let index = 1;
     [].forEach.call(document.querySelectorAll(sliderElement + ' > *'), function (section) {
-
-      var indicator = document.createElement('a');
+      let indicator = document.createElement('a');
       indicator.classList.add('slider__indicator')
       indicator.setAttribute('data-slider-target-index', index);
+      console.log("indicator", indicator);
       indicatorContainer.appendChild(indicator);
 
       section.classList.add('slider__page');
       pages.push(section);
       section.setAttribute('data-slider-index', index++);
+      console.log("indicatorsection", section);
     });
 
     document.body.appendChild(indicatorContainer);
@@ -63,20 +69,20 @@ var slider = function (sliderElement) {
 
 
     // stuff for touch devices
-    var touchStartPos = 0;
-    var touchStopPos = 0;
-    var touchMinLength = 90;
+    let touchStartPos = 0;
+    let touchStopPos = 0;
+    let touchMinLength = 90;
     document.addEventListener('touchstart', function (e) {
       e.preventDefault();
       if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
-        var touch = e.touches[0] || e.changedTouches[0];
+        let touch = e.touches[0] || e.changedTouches[0];
         touchStartPos = touch.pageY;
       }
     }, { passive: false });
     document.addEventListener('touchend', function (e) {
       e.preventDefault();
       if (e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel') {
-        var touch = e.touches[0] || e.changedTouches[0];
+        let touch = e.touches[0] || e.changedTouches[0];
         touchStopPos = touch.pageY;
       }
       if (touchStartPos + touchMinLength < touchStopPos) {
@@ -89,10 +95,10 @@ var slider = function (sliderElement) {
 
 
   // prevent double scrolling
-  var detectChangeEnd = function () {
-    var transition;
-    var e = document.createElement('foobar');
-    var transitions = {
+  let detectChangeEnd = function () {
+    let transition;
+    let e = document.createElement('foobar');
+    let transitions = {
       'transition': 'transitionend',
       'OTransition': 'oTransitionEnd',
       'MozTransition': 'transitionend',
@@ -100,6 +106,8 @@ var slider = function (sliderElement) {
     };
 
     for (transition in transitions) {
+      console.log("transition", transition);
+      console.log("e.style[transition]", e.style[transition]);
       if (e.style[transition] !== undefined) {
         return transitions[transition];
       }
@@ -109,8 +117,10 @@ var slider = function (sliderElement) {
 
 
   // handle css change
-  var changeCss = function (obj, styles) {
-    for (var _style in styles) {
+  let changeCss = function (obj, styles) {
+
+    for (let _style in styles) {
+      console.log("obj.style[_style]", obj.style[_style]);
       if (obj.style[_style] !== undefined) {
         obj.style[_style] = styles[_style];
       }
@@ -118,7 +128,7 @@ var slider = function (sliderElement) {
   };
 
   // handle page/section change
-  var changeSlide = function (direction) {
+  let changeSlide = function (direction) {
 
     // already doing it or last/first page, staph plz
     if (isChanging || (direction == 1 && currentSlide == pages.length) || (direction == -1 && currentSlide == 1)) {
@@ -138,12 +148,14 @@ var slider = function (sliderElement) {
   };
 
   // go to spesific slide if it exists
-  var gotoSlide = function (where) {
-    var target = document.querySelector(where).getAttribute('data-slider-index');
-    //console.log("Target ", target);
-    //console.log("CurrentSlide ", currentSlide);
+  let gotoSlide = function (where) {
+    let target = document.querySelector(where).getAttribute('data-slider-index');
+    console.log("Target ", target);
+    console.log("CurrentSlide ", currentSlide);
     if (target != currentSlide && document.querySelector(where)) {
       changeSlide(target - currentSlide);
+      console.log("changeSlide ", changeSlide);
+
     }
   };
 
@@ -163,6 +175,7 @@ var slider = function (sliderElement) {
     window.addEventListener('onload', init(), false);
   }
 
+  /* Yendo a una sección en específico desde el cintillo del footer */
   (document).addEventListener("click", function () {
     if (document.activeElement.className == "pres") {
       gotoSlide("#presentacion");
@@ -181,35 +194,44 @@ var slider = function (sliderElement) {
     }
   })
 
-  // expose gotoSlide function
-  return {
-    gotoSlide: gotoSlide
-  }
 };
 
 /*
-    (".slider__indicator").click(function(){
-      console.log('$(this).val():', (this).val());
-    });
+ document.getElementById("presentacion").addEventListener("focus", function(){
+   console.log("ENTRA AL TIMEOUT");
+   const myTimeout = setTimeout(myGreeting, 5000);
+ });
+ function myGreeting() {
+   document.getElementById("fade-in-text").innerHTML = "Happy Birthday!"
+ }
+
+ // expose gotoSlide function
+ return {
+   gotoSlide: gotoSlide
+ }
 
 
-    console.log('$(this).val():', $(this).val());
-    console.log("DAC ", document.activeElement.className);
-    //if (document.activeElement.className == "slider__indicator") {
-    var indice = a.getAttribute("data-slider-target-index");
-    console.log("Indice: ", indice);
-    //}
+   (".slider__indicator").click(function(){
+     console.log('$(this).val():', (this).val());
+   });
+
+
+   console.log('$(this).val():', $(this).val());
+   console.log("DAC ", document.activeElement.className);
+   //if (document.activeElement.className == "slider__indicator") {
+   let indice = a.getAttribute("data-slider-target-index");
+   console.log("Indice: ", indice);
+   //}
 
 
 
-    <div class="slider__indicators">
-      <a class="slider__indicator slider__indicator--active" data-slider-target-index="1"></a>
-      <a class="slider__indicator" data-slider-target-index="2"></a>
-      <a class="slider__indicator" data-slider-target-index="3"></a>
-      <a class="slider__indicator" data-slider-target-index="4"></a>
-      <a class="slider__indicator" data-slider-target-index="5"></a>
-      <a class="slider__indicator" data-slider-target-index="6"></a>
-    </div>
+   <div class="slider__indicators">
+     <a class="slider__indicator slider__indicator--active" data-slider-target-index="1"></a>
+     <a class="slider__indicator" data-slider-target-index="2"></a>
+     <a class="slider__indicator" data-slider-target-index="3"></a>
+     <a class="slider__indicator" data-slider-target-index="4"></a>
+     <a class="slider__indicator" data-slider-target-index="5"></a>
+     <a class="slider__indicator" data-slider-target-index="6"></a>
+   </div>
 */
-
 

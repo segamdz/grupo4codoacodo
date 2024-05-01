@@ -23,12 +23,23 @@ html {
   background: linear-gradient(#65cce1, #6365ec);
 }
 
-#pie {
-  background: black;
-  height: 50%;
+section .diapositiva{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
-section>span {
+section .flomen{
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  float: right;
+}
+
+section .diapositiva>span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -39,23 +50,62 @@ section>span {
   color: #fff;
 }
 
-.img-vertical-center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.fade-in-text {
+  animation:fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
 }
 
-.PIE {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3vw;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: yellow;
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .flex-container {
@@ -73,6 +123,8 @@ body.slider__body {
   padding: 0;
   overflow: hidden;
 }
+
+
 
 .slider__container {
   position: fixed;
@@ -93,7 +145,39 @@ body.slider__body {
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.nav-menu {
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 15px;
+}
+
+.nav-menu li a:hover {
+  color: #cc0000;
+}
+#nav-checkbox:Checked~.nav-menu {
+  background: #cc0000;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #fff;
+}
+
+#nav-checkbox:checked~ul.nav-menu li {
+  display: block;
+}
+
 
 .slider__indicators {
   position: fixed;
@@ -106,6 +190,7 @@ body.slider__body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 .slider__indicator {
   display: block;
   width: 10px;
@@ -115,6 +200,18 @@ body.slider__body {
   background-color: #fff;
   cursor: default;
 }
+
 .slider__indicator--active {
   opacity: 0.3;
+}
+
+.PIE {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: yellow;
 }
