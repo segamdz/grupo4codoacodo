@@ -150,9 +150,6 @@ body.slider__body {
   justify-content: center;
 }
 
-.nav-menu {
-}
-
 .nav-menu li {
   display: inline-block;
 }
@@ -205,13 +202,3 @@ body.slider__body {
   opacity: 0.3;
 }
 
-.PIE {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3vw;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: yellow;
-}

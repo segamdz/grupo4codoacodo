@@ -1,3 +1,40 @@
+#pie {
+	width:100%;
+	height: 100%;
+	background-color:#000000;
+}
+
+section .flex-box-line{
+  display: inline-flex;
+	padding-bottom: 3%;
+	clear:both;
+  bottom: 0;
+  align-items:flex-end;
+  justify-content: center;
+}
+
+
+.copyright {
+	width: 30%;
+	font-size: 9px;
+	text-align: center;
+	color: yellow;
+	float: left;
+	margin: auto;
+}
+
+.PIE {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3vw;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: yellow;
+}
+
+
 .footer-container {
 	width:100%;
 	background-color:#000000;
@@ -29,7 +66,7 @@
 	width: 100vw;
 	background-color: #073bb3;
 	clear: both;
-	float:right;
+	float:bottom;
 }
 
 .footer-nav {
