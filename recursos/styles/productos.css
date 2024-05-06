@@ -5,6 +5,10 @@ root{
 	overflow: hidden;
 }
 
+body {
+	font-size: 100%;
+}
+
 .header-site {
 	display: flex;
 	width: 100%;
@@ -114,14 +118,14 @@ root{
 
 .overlay-content {
   max-width: 100%;
-	max-height: auto;
+	max-height: 100%;
   padding-top: 20%;
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: lg 1rem;
+  font-size: 0.6em;
   color: black;
   display: block;
   transition: 0.3s;
@@ -135,7 +139,7 @@ root{
 @media screen and (max-height: 450vh) {
   .overlay a {font-size: 1em}
   .overlay .closebtn {
-  font-size: lg 2rem md 1.5rem sm 1rem;
+  font-size: 2em;
   top: 2vh;
   right: 3.5 vw;
   }
@@ -170,17 +174,17 @@ root{
 }
 
 .footer-navlinks {
-	padding-right: 45px;
+	padding-right: 5%;
 	max-width: 180px;
 	float: right
 }
 
 .footer-title {
-	height: 18px;
-	font-size: 16px;
+	height: 2vh;
+	font-size: 1em;
 	font-weight: 700;
 	color: #f8f8e5;
-	margin-bottom: 11px
+	margin-bottom: 1vh
 }
 
 .footer-container {
@@ -208,3 +212,18 @@ root{
 	padding: 0 12px
 }
 
+.footer-nav-container{
+	margin-top: 5vh;
+	display: inline-flex;
+	height: 15vh;
+}
+
+.copyright{
+	width: 40vw;
+	float: left;
+}
+
+.footer-nav{
+	width: 60vw;
+	float: right;
+}

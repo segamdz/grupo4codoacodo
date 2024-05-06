@@ -20,6 +20,8 @@
 .logo {
   grid-area: 1 / 1 / 2 / 5;
   display: inline-flex;
+  align-items: baseline;
+  justify-content: start;
 }
 
 .logotipo {
@@ -31,17 +33,18 @@
 .logo img {
   float: left;
   height: 80%;
-  max-height: 15vh;
+  max-height: 10vh;
   object-fit: contain;
 }
 
 .breadcrumbs {
-  height: 20%;
+  display: block;
+  height: 30%;
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: normal;
-  float: bottom;
-  padding-left: 2vw;
+  padding:5%
+
 }
 
 .navbar {
@@ -63,14 +66,6 @@
   background-color: cadetblue;
 }
 
-.breadcrumbs {
-  height: 20%;
-  color: #000000;
-  font-size: 1.5rem;
-  font-weight: normal;
-  float: bottom;
-  padding-left: 2vw;
-}
 
 .leftnav-wrapper {
   height: 100%;
@@ -137,11 +132,11 @@
 
 }
 
-.casillas .foto > img{
+.casillas .foto>img {
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
-  
+
 }
 
 .casillas leyenda {
@@ -149,7 +144,7 @@
   grid-row-end: 5;
   height: 20%;
   color: white;
-  background-color:grey;
+  background-color: grey;
 }
 
 
@@ -160,4 +155,3 @@
 .footer {
   grid-area: 10 / 1 / 10 / 10;
 }
-

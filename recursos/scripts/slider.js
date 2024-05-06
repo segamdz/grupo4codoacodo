@@ -13,7 +13,7 @@ let slider = function (sliderElement) {
     // control scrolling
     whatWheel = 'onwheel' in document.createElement('div') ? 'wheel' : document.onmousewheel !== undefined ? 'mousewheel' : 'DOMMouseScroll';
     window.addEventListener(whatWheel, function (e) {
-      console.log("control scrolling");
+    //"control scrolling");
       let direction = e.wheelDelta || e.deltaY;
       if (direction > 0) {
         changeSlide(-1);
@@ -24,7 +24,7 @@ let slider = function (sliderElement) {
 
     // allow keyboard input
     window.addEventListener('keydown', function (e) {
-      console.log("allow keyboard input");
+    //"allow keyboard input");
       if (keyUp[e.keyCode]) {
         changeSlide(-1);
       } else if (keyDown[e.keyCode]) {
@@ -34,19 +34,20 @@ let slider = function (sliderElement) {
 
     // page change animation is done
     detectChangeEnd() && document.querySelector(sliderElement).addEventListener(detectChangeEnd(), function () {
-      console.log("page change animation is done");
+    console.log("page change animation is done");
       if (isChanging) {
         setTimeout(function () {
           isChanging = false;
           window.location.hash = document.querySelector('[data-slider-index="' + currentSlide + '"]').id;
-          console.log("window.location.hash ", window.location.hash);
+        console.log("window.location.hash ", window.location.hash);
         }, 400);
       }
     });
 
     // set up page and build visual indicators
     document.querySelector(sliderElement).classList.add('slider__container');
-    console.log("set up page and build visual indicators");
+    
+  //"set up page and build visual indicators");
     let indicatorContainer = document.createElement('div');
     indicatorContainer.classList.add('slider__indicators');
 
@@ -55,13 +56,11 @@ let slider = function (sliderElement) {
       let indicator = document.createElement('a');
       indicator.classList.add('slider__indicator')
       indicator.setAttribute('data-slider-target-index', index);
-      console.log("indicator", indicator);
       indicatorContainer.appendChild(indicator);
 
       section.classList.add('slider__page');
       pages.push(section);
       section.setAttribute('data-slider-index', index++);
-      console.log("indicatorsection", section);
     });
 
     document.body.appendChild(indicatorContainer);
@@ -106,8 +105,8 @@ let slider = function (sliderElement) {
     };
 
     for (transition in transitions) {
-      console.log("transition", transition);
-      console.log("e.style[transition]", e.style[transition]);
+    //"transition", transition);
+    //"e.style[transition]", e.style[transition]);
       if (e.style[transition] !== undefined) {
         return transitions[transition];
       }
@@ -120,7 +119,7 @@ let slider = function (sliderElement) {
   let changeCss = function (obj, styles) {
 
     for (let _style in styles) {
-      console.log("obj.style[_style]", obj.style[_style]);
+    //"obj.style[_style]", obj.style[_style]);
       if (obj.style[_style] !== undefined) {
         obj.style[_style] = styles[_style];
       }
@@ -150,11 +149,11 @@ let slider = function (sliderElement) {
   // go to spesific slide if it exists
   let gotoSlide = function (where) {
     let target = document.querySelector(where).getAttribute('data-slider-index');
-    console.log("Target ", target);
-    console.log("CurrentSlide ", currentSlide);
+  //"Target ", target);
+  //"CurrentSlide ", currentSlide);
     if (target != currentSlide && document.querySelector(where)) {
       changeSlide(target - currentSlide);
-      console.log("changeSlide ", changeSlide);
+    //"changeSlide ", changeSlide);
 
     }
   };
@@ -198,7 +197,7 @@ let slider = function (sliderElement) {
 
 /*
  document.getElementById("presentacion").addEventListener("focus", function(){
-   console.log("ENTRA AL TIMEOUT");
+ //"ENTRA AL TIMEOUT");
    const myTimeout = setTimeout(myGreeting, 5000);
  });
  function myGreeting() {
@@ -212,15 +211,15 @@ let slider = function (sliderElement) {
 
 
    (".slider__indicator").click(function(){
-     console.log('$(this).val():', (this).val());
+   //'$(this).val():', (this).val());
    });
 
 
-   console.log('$(this).val():', $(this).val());
-   console.log("DAC ", document.activeElement.className);
+ //'$(this).val():', $(this).val());
+ //"DAC ", document.activeElement.className);
    //if (document.activeElement.className == "slider__indicator") {
    let indice = a.getAttribute("data-slider-target-index");
-   console.log("Indice: ", indice);
+ //"Indice: ", indice);
    //}
 
 

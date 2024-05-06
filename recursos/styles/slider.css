@@ -1,3 +1,5 @@
+@import url(./contact.css);
+
 body,
 html {
   height: 100%;
@@ -7,7 +9,7 @@ html {
   background: linear-gradient(225deg, #ffc27d, #ff8e93);
 }
 
-#Contenido1 {
+#nosotros {
   background: linear-gradient(#f3defc, #63a3e6);
 }
 
@@ -23,12 +25,38 @@ html {
   background: linear-gradient(#65cce1, #6365ec);
 }
 
+
+.slider__container {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.slider__page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+
 section .diapositiva{
   display: flex;
   position: relative;
   z-index: 1;
   height: 100%;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 section .flomen{
@@ -113,57 +141,12 @@ section .diapositiva>span {
   flex-direction: column;
 }
 
-.flex-box-line {
-  display: flex;
-  flex-direction: row;
-}
-
 body.slider__body {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-
-
-.slider__container {
-  position: fixed;
-  display: block;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  -o-transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-}
-
-.slider__page {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-menu li {
-  display: inline-block;
-}
-
-.nav-menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5rem;
-  padding: 0 15px;
-}
-
-.nav-menu li a:hover {
-  color: #cc0000;
-}
 #nav-checkbox:Checked~.nav-menu {
   background: #cc0000;
   margin-top: 10px;
@@ -201,4 +184,27 @@ body.slider__body {
 .slider__indicator--active {
   opacity: 0.3;
 }
+
+.flex-box-line {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.nav-menu li {
+  display: inline-block;
+}
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 15px;
+}
+
+.nav-menu li a:hover {
+  color: #cc0000;
+}
+
 

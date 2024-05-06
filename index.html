@@ -44,8 +44,7 @@
         <section id="nosotros">
           <div class="diapositiva">
             <span class="fade-in-text" id="fade-in-text">Un, muy breve, que hacemos</span>
-            <img src="./recursos/Images/375594-Longitude_Exterior_2019_02-c42cc7-original-1610392719.png" alt="avion"
-              style="width: 100%; height: auto;">
+            <img src="./recursos/Images/reno1.png" alt="Energía Renovable" style="width: 100%; height: auto;">
           </div>
           <div class="flomen">
             <ul class="nav-menu">
@@ -59,10 +58,9 @@
         </section>
         <section id="Productos">
           <div class="diapositiva">
-            <span>Fotos / videos / referencias de producto</span>
+            <span class="fade-in-text" id="fade-in-text">Fotos / videos / referencias de producto</span>
             <a href="./recursos/html/Productos.html">
-              <img src="./recursos/Images/Producto.png" alt="Productos" title="Ir a Productos"
-                style="width: 100%; height: auto;">
+              <img src="./recursos/Images/renob.png" alt="Turbinas de Viento" style="width: 100%; height: auto;">
             </a>
           </div>
           <div class="flomen">
@@ -92,8 +90,8 @@
         </section>
         <section id="contacto">
           <div class="diapositiva">
-            <span>Una forma de contacto / Solicite mas información / etc.</span>
-            <img src="./recursos/Images/Desktop-HD-Nature-Wallpapers-1.jpg" alt="naturaleza"
+            <!-- <span>Una forma de contacto / Solicite mas información / etc.</span> -->
+            <img src="./recursos/Images/Producto.png" alt="Contacto" title="Contacto"
               style="width: 100%; height: auto;">
           </div>
           <div class="flomen">
@@ -105,9 +103,57 @@
               <li><a href="#" class="cont">Contacto</a></li>
             </ul>
           </div>
+          <div class="form-cont">
+            <div class="libre">
+              <h2 style="text-align: center;">Solicite presupuesto</h2>
+              <form action="/action_page.html">
+                <h3>Cotiza por:</h3>
+                <br>
+                <input type="radio" id="ventas" name="ventas" value="Ventas">
+                <label for="ventas">Ventas</label><br>
+                <input type="radio" id="servic" name="servic" value="Servic">
+                <label for="servic">Servicio</label><br>
+                <br><br><br><br>
+                <h3>Su área:</h3>
+                <br>
+                <label for="Area">Area:</label>
+                <select name="area" id="area">
+                  <option value="">Seleccione Area</option>
+                  <option value="sisal">Sistemas de Almacenamiento</option>
+                  <option value="bater">Baterias</option>
+                  <option value="panel">Paneles Solares</option>
+                  <option value="carga">Estaciones de Carga</option>
+                  <option value="inver">Inversores</option>
+                  <option value="kits">Kits</option>
+                  <option value="lampa">Lámparas Solares</option>
+                  <option value="Techo">Techos Solares</option>
+                  <option value="eolos">Turbinas Eólicas</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+            <div class="forma">
+              <h2 style="text-align: center;">Contáctenos</h2>
+              <form>
+                <input name="name" type="text" class="feedback-input" placeholder="Nombre" />
+                <input name="email" type="text" class="feedback-input" placeholder="Correoe" />
+                <textarea name="text" class="feedback-input" placeholder="Su tema de interés"
+                  style="color: black;"></textarea>
+                <input type="submit" value="ENVIAR" />
+              </form>
+            </div>
+          </div>
         </section>
         <section id="pie">
           <div class="flex-box-line">
+            <div class="footer-nav-container">
+              <div class="flex-box-line">
+                <div class="copyright">
+                  © 2024 SurSolar All rights reserved.
+                </div>
+              </div>
+            </div>
             <div class="footer-nav-container">
               <div class="footer-nav">
                 <div class="footer-navlinks">
@@ -121,45 +167,14 @@
                 </div>
               </div>
             </div>
-            <div class="footer-nav-container">
-              <div class="flex-box-line">
-                <div class="copyright">
-                  © 2024 SurSolar All rights reserved.
-                </div>
-              </div>
-            </div>
           </div>
         </section>
       </div>
-
-      <!--  <h1>SySS Coding</h1>
-          <h3>Aprendiendo HTML CSS JS</h3>
-          <a href="#">Suscri</a> -->
-
   </div>
   <script src="./recursos/scripts/slider.js"></script>
   <script>
     var mySlider = slider('.slides');
   </script>
-  <!--   
-  <script>
-    window.onscroll = function () { myFunction() };
-
-    var header = document.getElementById("cinta");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-      if (window.scrollY > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-  </script>
-  -->
-  <!--
-  <script src="./../scripts/jquery-3.7.1.min.js"></script>
-  -->
 </body>
 
 </html>
