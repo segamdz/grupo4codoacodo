@@ -191,46 +191,6 @@ let slider = function (sliderElement) {
     if (document.activeElement.className == "cont") {
       gotoSlide("#contacto");
     }
+
   })
-
-};
-
-/*
- document.getElementById("presentacion").addEventListener("focus", function(){
- //"ENTRA AL TIMEOUT");
-   const myTimeout = setTimeout(myGreeting, 5000);
- });
- function myGreeting() {
-   document.getElementById("fade-in-text").innerHTML = "Happy Birthday!"
- }
-
- // expose gotoSlide function
- return {
-   gotoSlide: gotoSlide
- }
-
-
-   (".slider__indicator").click(function(){
-   //'$(this).val():', (this).val());
-   });
-
-
- //'$(this).val():', $(this).val());
- //"DAC ", document.activeElement.className);
-   //if (document.activeElement.className == "slider__indicator") {
-   let indice = a.getAttribute("data-slider-target-index");
- //"Indice: ", indice);
-   //}
-
-
-
-   <div class="slider__indicators">
-     <a class="slider__indicator slider__indicator--active" data-slider-target-index="1"></a>
-     <a class="slider__indicator" data-slider-target-index="2"></a>
-     <a class="slider__indicator" data-slider-target-index="3"></a>
-     <a class="slider__indicator" data-slider-target-index="4"></a>
-     <a class="slider__indicator" data-slider-target-index="5"></a>
-     <a class="slider__indicator" data-slider-target-index="6"></a>
-   </div>
-*/
-
+}

@@ -8,7 +8,6 @@
   <link href="./recursos/Images/icons/planeta.ico" rel="shortcut icon" type="image/x-icon" />
   <!-- diseño del slider -->
   <link rel="stylesheet" href="./recursos/styles/slider.css">
-  <link rel="stylesheet" href="./recursos/styles/footer.css">
   <!--NavBar flotante y transparente.-->
   <!-- <link rel="stylesheet" type="text/CSS" href="./recursos/styles/navflo.css"> -->
 
@@ -67,7 +66,7 @@
             <ul class="nav-menu">
               <li><a href="#" class="pres">Home</a></li>
               <li><a href="#" class="noso">Nosotros</a></li>
-              <li><a href="#" class="prod">Productos</a></li>
+              <li><a href="./recursos/html/Productos.html">Productos</a></li>
               <li><a href="#" class="serv">Servicios</a></li>
               <li><a href="#" class="cont">Contacto</a></li>
             </ul>
@@ -109,28 +108,32 @@
               <form action="/action_page.html">
                 <h3>Cotiza por:</h3>
                 <br>
-                <input type="radio" id="ventas" name="ventas" value="Ventas">
-                <label for="ventas">Ventas</label><br>
-                <input type="radio" id="servic" name="servic" value="Servic">
-                <label for="servic">Servicio</label><br>
-                <br><br><br><br>
+                <div class="radios">
+                  <input type="radio" id="ventas" name="tipo" value="Ventas" style="margin-left: 10%;">
+                  <label for="ventas">Ventas</label><br>
+                  <input type="radio" id="servic" name="tipo" value="Servic" style="margin-left: 10%;">
+                  <label for="servic">Servicio</label><br>
+                  <br><br><br><br>
+                </div>
                 <h3>Su área:</h3>
                 <br>
-                <label for="Area">Area:</label>
-                <select name="area" id="area">
-                  <option value="">Seleccione Area</option>
-                  <option value="sisal">Sistemas de Almacenamiento</option>
-                  <option value="bater">Baterias</option>
-                  <option value="panel">Paneles Solares</option>
-                  <option value="carga">Estaciones de Carga</option>
-                  <option value="inver">Inversores</option>
-                  <option value="kits">Kits</option>
-                  <option value="lampa">Lámparas Solares</option>
-                  <option value="Techo">Techos Solares</option>
-                  <option value="eolos">Turbinas Eólicas</option>
-                </select>
+                <div class="areas">
+                  <label for="Area">Area:</label>
+                  <select name="area" id="area">
+                    <option value="">Seleccione Area</option>
+                    <option value="sisal">Sistemas de Almacenamiento</option>
+                    <option value="bater">Baterias</option>
+                    <option value="panel">Paneles Solares</option>
+                    <option value="carga">Estaciones de Carga</option>
+                    <option value="inver">Inversores</option>
+                    <option value="kits">Kits</option>
+                    <option value="lampa">Lámparas Solares</option>
+                    <option value="Techo">Techos Solares</option>
+                    <option value="eolos">Turbinas Eólicas</option>
+                  </select>
+                </div>
                 <br><br>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Solicitar">
               </form>
             </div>
             <div class="forma">
@@ -146,26 +149,22 @@
           </div>
         </section>
         <section id="pie">
-          <div class="flex-box-line">
-            <div class="footer-nav-container">
-              <div class="flex-box-line">
-                <div class="copyright">
-                  © 2024 SurSolar All rights reserved.
-                </div>
-              </div>
+          <div class="diapositiva">
+            <img src="./recursos/Images/fn.png" alt="footer" title="footer" style="width: 100%; height: auto;">
+          </div>
+
+          <div class="footer-nav-container">
+            <div class="copyright">
+              © 2024 SurSolar All rights reserved.
             </div>
-            <div class="footer-nav-container">
-              <div class="footer-nav">
-                <div class="footer-navlinks">
-                  <ul class="nav-menu">
-                    <li><a href="#" class="pres">Home</a></li>
-                    <li><a href="#" class="noso">Nosotros</a></li>
-                    <li><a href="#" class="prod">Productos</a></li>
-                    <li><a href="#" class="serv">Servicios</a></li>
-                    <li><a href="#" class="cont">Contacto</a></li>
-                  </ul>
-                </div>
-              </div>
+            <div class="footer-nav">
+              <ul class="footer-navlinks">
+                <li><a href="#" class="pres">Home</a></li>
+                <li><a href="#" class="noso">Nosotros</a></li>
+                <li><a href="#" class="prod">Productos</a></li>
+                <li><a href="#" class="serv">Servicios</a></li>
+                <li><a href="#" class="cont">Contacto</a></li>
+              </ul>
             </div>
           </div>
         </section>
@@ -173,7 +172,10 @@
   </div>
   <script src="./recursos/scripts/slider.js"></script>
   <script>
-    var mySlider = slider('.slides');
+    let mySlider = slider('.slides');
+  </script>
+  <script>
+    }
   </script>
 </body>
 
