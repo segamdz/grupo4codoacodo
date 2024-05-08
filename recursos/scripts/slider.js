@@ -10,10 +10,10 @@ let slider = function (sliderElement) {
 
     document.body.classList.add('slider__body');
 
-    // control scrolling
+    // controlar el deslizamiento
     whatWheel = 'onwheel' in document.createElement('div') ? 'wheel' : document.onmousewheel !== undefined ? 'mousewheel' : 'DOMMouseScroll';
     window.addEventListener(whatWheel, function (e) {
-    //"control scrolling");
+      console.log("controlando el deslizamiento");
       let direction = e.wheelDelta || e.deltaY;
       if (direction > 0) {
         changeSlide(-1);
@@ -22,32 +22,32 @@ let slider = function (sliderElement) {
       }
     });
 
-    // allow keyboard input
+    // permitir interacción del teclado
     window.addEventListener('keydown', function (e) {
-    //"allow keyboard input");
-      if (keyUp[e.keyCode]) {
+      console.log("permitir interacción del teclado");
+      if (keyUp[e.key]) {
         changeSlide(-1);
-      } else if (keyDown[e.keyCode]) {
+      } else if (keyDown[e.key]) {
         changeSlide(1);
       }
     });
 
-    // page change animation is done
+    // animación del cambio de página, terminado
     detectChangeEnd() && document.querySelector(sliderElement).addEventListener(detectChangeEnd(), function () {
-    console.log("page change animation is done");
+      console.log("animación del cambio de página, terminado");
       if (isChanging) {
         setTimeout(function () {
           isChanging = false;
           window.location.hash = document.querySelector('[data-slider-index="' + currentSlide + '"]').id;
-        console.log("window.location.hash ", window.location.hash);
+          console.log("window.location.hash ", window.location.hash);
         }, 400);
       }
     });
 
-    // set up page and build visual indicators
+    // preparar la página y construir los indicadores visuales
     document.querySelector(sliderElement).classList.add('slider__container');
-    
-  //"set up page and build visual indicators");
+
+    console.log("preparar la página y construir los indicadores visuales");
     let indicatorContainer = document.createElement('div');
     indicatorContainer.classList.add('slider__indicators');
 
@@ -67,7 +67,7 @@ let slider = function (sliderElement) {
     document.querySelector('a[data-slider-target-index = "' + currentSlide + '"]').classList.add('slider__indicator--active');
 
 
-    // stuff for touch devices
+    // para los equipos táctiles
     let touchStartPos = 0;
     let touchStopPos = 0;
     let touchMinLength = 90;
@@ -93,7 +93,7 @@ let slider = function (sliderElement) {
   };
 
 
-  // prevent double scrolling
+  // previniendo el doble-deslizamiento
   let detectChangeEnd = function () {
     let transition;
     let e = document.createElement('foobar');
@@ -105,8 +105,8 @@ let slider = function (sliderElement) {
     };
 
     for (transition in transitions) {
-    //"transition", transition);
-    //"e.style[transition]", e.style[transition]);
+      console.log("transition", transition);
+      console.log("e.style[transition]", e.style[transition]);
       if (e.style[transition] !== undefined) {
         return transitions[transition];
       }
@@ -115,66 +115,67 @@ let slider = function (sliderElement) {
   };
 
 
-  // handle css change
+  // lidiando con los cambios del CSS
   let changeCss = function (obj, styles) {
-
     for (let _style in styles) {
-    //"obj.style[_style]", obj.style[_style]);
+      console.log("obj.style[_style]", obj.style[_style]);
       if (obj.style[_style] !== undefined) {
         obj.style[_style] = styles[_style];
       }
     }
   };
 
-  // handle page/section change
+  // manejando el cambio de página/sección
   let changeSlide = function (direction) {
 
-    // already doing it or last/first page, staph plz
+    // estoy en eso, o en la primera/última página; cálmate
     if (isChanging || (direction == 1 && currentSlide == pages.length) || (direction == -1 && currentSlide == 1)) {
       return;
     }
 
-    // change page
+    // cambiar página
     currentSlide += direction;
     isChanging = true;
     changeCss(document.querySelector(sliderElement), {
       transform: 'translate3d(0, ' + -(currentSlide - 1) * 100 + '%, 0)'
     });
 
-    // change dots
+    // cambiando los puntos del indicador
     document.querySelector('a.slider__indicator--active').classList.remove('slider__indicator--active');
+    console.log('a[data-slider-target-index]', document.querySelector('a[data-slider-target-index="' + currentSlide + '"]'));
     document.querySelector('a[data-slider-target-index="' + currentSlide + '"]').classList.add('slider__indicator--active');
   };
 
-  // go to spesific slide if it exists
+  // ir a una diapositiva específica, si existe
   let gotoSlide = function (where) {
     let target = document.querySelector(where).getAttribute('data-slider-index');
-  //"Target ", target);
-  //"CurrentSlide ", currentSlide);
+    console.log("Target ", target);
+    console.log("CurrentSlide ", currentSlide);
     if (target != currentSlide && document.querySelector(where)) {
       changeSlide(target - currentSlide);
-    //"changeSlide ", changeSlide);
+      console.log("changeSlide ", changeSlide);
 
     }
   };
 
-  // if page is loaded with hash, go to slide
+  // si la página se carga con un hash, ir a la diapositiva
   if (location.hash) {
     setTimeout(function () {
       window.scrollTo(0, 0);
-      //console.log("location.hash", location.hash);
+      console.log("location.hash", location.hash);
       gotoSlide(location.hash);
     }, 1);
   };
 
-  // we have lift off
+  // y... despegamos
   if (document.readyState === 'complete') {
     init();
   } else {
     window.addEventListener('onload', init(), false);
   }
 
-  /* Yendo a una sección en específico desde el cintillo del footer */
+  /* Yendo a una sección en específico desde el cintillo 
+    de la barra de navegación, o del footer */
   (document).addEventListener("click", function () {
     if (document.activeElement.className == "pres") {
       gotoSlide("#presentacion");
@@ -191,6 +192,8 @@ let slider = function (sliderElement) {
     if (document.activeElement.className == "cont") {
       gotoSlide("#contacto");
     }
+    let collection = document.getElementsByClassName("slider__indicator");
+    console.log('collection:', collection);
 
   })
 }

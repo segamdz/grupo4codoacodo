@@ -42,7 +42,6 @@ body {
 .breadcrumbs {
   height: 20%;
   color: #000000;
-  font-size: 1.5rem;
   font-weight: normal;
   float: left;
   padding-left: 2vw;
@@ -68,7 +67,6 @@ body {
 	width: 20%;
 	height: 100%;
 	text-align: right;
-	font-size: 12px;
 	float: right;
 	color: #fff;
 	line-height: 22px;
@@ -77,13 +75,11 @@ body {
 
 .login a {
 	color: #fff;
-	font: size 1.17rem;
 	text-decoration: none
 }
 
 .login a:hover {
 	color: #d1d2d2;
-	font-size: 1.17rem;
 	text-decoration: none
 }
 
@@ -98,17 +94,12 @@ body {
 	width: 18%
 }
 
-.overlay .closebtn {
-  margin-top: 10%;
-  float: right;
-  font-size: 2rem;
-}
 
 .overlay {
   max-height: 80%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  /* z-index: 1; */
   top: 10vh;
   left: 0;
   background-color: rgb(49, 49, 170);
@@ -125,7 +116,6 @@ body {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 0.6em;
   color: black;
   display: block;
   transition: 0.3s;
@@ -135,15 +125,6 @@ body {
   color: #f1f1f1;
 }
 
-
-@media screen and (max-height: 450vh) {
-  .overlay a {font-size: 1em}
-  .overlay .closebtn {
-  font-size: 2em;
-  top: 2vh;
-  right: 3.5 vw;
-  }
-}
 
 .TopNav li {
 	float:none;
@@ -162,8 +143,104 @@ body {
 	width: 2%
 }
 
-.SubPro a {
-	color: rgb(197, 197, 24);
+@media screen and (min-width: 1152px) {
+	.login {
+		font-size: 1.5em;
+	}
+	
+	.login a:hover{
+		font-size: 1.5em;
+	}
+	
+	.breadcrumbs {
+		font-size: 1.5em;
+	}
+	
+	.overlay .closebtn {
+		font-size: 2em;
+		top: 2vh;
+		right: 3.5 vw;
+		}
+	
+	.TopNav a>span {
+		font-size: 1em;
+	}
+	
+  .SubPro a {
+		color: rgb(197, 197, 24);
+		font-size: 1em;
+  }
+
+	.footer-title {
+		font-size: 1em;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	.login {
+		font-size: .975em;
+	}
+	
+	.login a:hover{
+		font-size: .975em;
+	}
+	
+	.breadcrumbs {
+		font-size: .975em;
+	}
+	
+	.overlay .closebtn {
+		font-size: 1.3em;
+		top: 1.3vh;
+		right: 2.275vw;
+		}
+	
+	.TopNav a>span {
+		font-size: .65em;
+	}
+	
+  .SubPro a {
+		color: rgb(197, 197, 24);
+		font-size: .65em;
+  }
+
+	.footer-title {
+		font-size: .65em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.login {
+		font-size: .675em;
+	}
+	
+	.login a:hover{
+		font-size: .675em;
+	}
+	
+	.breadcrumbs {
+		font-size: .675em;
+	}
+	
+	.overlay .closebtn {
+		font-size: .9em;
+		top: .9vh;
+		right: 1.575vw;
+		}
+	
+	.TopNav a>span {
+		font-size: .45em;
+	}
+
+  .SubPro a {
+		color: rgb(197, 197, 24);
+		font-size: .45em;
+  }
+
+	.footer-title {
+		font-size: .45em;
+	}
 }
 
 .container-Flex {
@@ -181,7 +258,6 @@ body {
 
 .footer-title {
 	height: 2vh;
-	font-size: 1em;
 	font-weight: 700;
 	color: #f8f8e5;
 	margin-bottom: 1vh

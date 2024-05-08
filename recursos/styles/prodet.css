@@ -14,7 +14,6 @@
 
 .grid-container>div {
   text-align: center;
-  font-size: 2rem;
 }
 
 .logo {
@@ -41,10 +40,8 @@
   display: block;
   height: 30%;
   color: #000000;
-  font-size: 1rem;
   font-weight: normal;
-  padding:5%
-
+  padding: 5%
 }
 
 .navbar {
@@ -71,24 +68,18 @@
   height: 100%;
   width: 100%;
   padding-top: 2.4vh;
-  font-size: 1.2rem;
-  line-height: 2rem;
   color: #292829;
-  /*background-image:url(../images/bg-leftnav.gif);*/
   background-repeat: repeat-x;
-  /* background-color:#ffffff; */
   float: left;
 }
 
 .leftnav-wrapper h2 {
   max-width: 90%;
-  font-size: 2.5rem;
-  margin: auto;
+  margin: 1vh 1vw;
   padding-top: 1vh;
 }
 
 .leftnav-links2 {
-  margin: 2vh 1vw 2vh 1vw;
   color: #000000;
   text-align: left;
   float: left;
@@ -112,16 +103,14 @@
 .grid-container-II {
   display: grid;
   height: 100%;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 33.333%);
   background-color: rgba(34, 34, 150, 0.404);
-  /* For browsers that do not support gradients */
 }
 
 .casillas {
   display: grid;
-  height: 95%;
-  font-size: 1rem;
-  grid-template-rows: repeat (5, auto);
+  height: 80%;
+  grid-template-rows: (repeat(5, 20%));
 }
 
 .casillas .foto {
@@ -147,6 +136,147 @@
   background-color: grey;
 }
 
+@media screen and (min-width: 1152px) {
+  .login {
+    font-size: 1.5em;
+  }
+
+  .login a:hover {
+    font-size: 1.5em;
+  }
+
+  .breadcrumbs {
+    font-size: 1.5em;
+  }
+
+  .navbar>h1 {
+    font-size: 3.5em;
+  }
+
+  .lateral {
+    top: 2vh;
+    right: 3.5 vw;
+  }
+
+  .leftnav-wrapper {
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+
+  .leftnav-wrapper h2 {
+    font-size: 2em;
+  }
+
+  .leftnav-links2 {
+    margin: 2vh 1vw 2vh 1vw;
+    font-size: 1em;
+  }
+
+  .SubPro a {
+    color: rgb(197, 197, 24);
+    font-size: 1em;
+  }
+
+  .footer-title {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .login {
+    font-size: .975em;
+  }
+
+  .login a:hover {
+    font-size: .975em;
+  }
+
+  .breadcrumbs {
+    font-size: .975em;
+  }
+
+  .navbar>h1 {
+    font-size: 2.275em;
+  }
+
+  .lateral {
+    top: 1.3vh;
+    right: 2.275vw;
+  }
+
+  .leftnav-wrapper {
+    font-size: .78em;
+    line-height: 1.3em;
+  }
+
+  .leftnav-wrapper h2 {
+    font-size: 1.3em;
+  }
+
+  .leftnav-links2 {
+    margin: 1.3vh .65vw 1.3vh .65vw;
+    font-size: .65em;
+  }
+
+  .SubPro a {
+    color: rgb(197, 197, 24);
+    font-size: .65em;
+  }
+
+  .footer-title {
+    font-size: .65em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login {
+    font-size: .675em;
+  }
+
+  .login a:hover {
+    font-size: .675em;
+  }
+
+  .breadcrumbs {
+    font-size: .675em;
+  }
+
+  .navbar>h1 {
+    font-size: 1.575em;
+  }
+
+  .lateral {
+    top: .9vh;
+    right: 1.575vw;
+  }
+
+  .leftnav-wrapper {
+    font-size: .54em;
+    line-height: .9em;
+  }
+
+  .leftnav-wrapper h2 {
+    font-size: .9em;
+  }
+
+  .leftnav-links2 {
+    margin: .9vh .45vw .9vh .45vw;
+    font-size: .45em;
+  }
+
+  .SubPro a {
+    color: rgb(197, 197, 24);
+    font-size: .45em;
+  }
+
+  .footer-title {
+    font-size: .45em;
+  }
+}
+
+
+
 
 .item6 {
   grid-area: 2 / 10 / 10 / 10;
@@ -154,4 +284,57 @@
 
 .footer {
   grid-area: 10 / 1 / 10 / 10;
+}
+
+.footer-nav-container {
+	display: flex;
+  flex-direction: row;
+
+	height: 10vh;
+	width: 100vw;
+	background-color: #073bb3;
+	bottom: 0;
+  z-index: 3;
+}
+
+.copyright {
+	width: 30vw;
+	font-size: 0.625em;
+  font-weight: bold;
+	text-align: center;
+	color: yellow;
+	float: left;
+	margin: auto;
+}
+
+.footer-nav {
+	width: 70vw;
+	margin: auto;
+}
+
+.footer-navlinks {
+	color:#ffffff;
+}
+
+.footer-navlinks>li {
+  display: inline;
+  padding-right:2.8125em;
+	max-width:7.5em;
+	float:right;
+	font-size:0.6875em;
+	color:#ffffff;
+	line-height: 1em;
+	margin: 0.3125em 0px;
+}
+
+.footer-navlinks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0 0.3125em;
+}
+
+.footer-navlinks a:hover {
+	text-decoration:underline;
+  color: yellow;
 }
