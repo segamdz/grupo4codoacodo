@@ -1,5 +1,8 @@
+/* Para las formas de contacto */
 @import url(./contact.css);
-/* Font Awesome  */
+
+/* Font Awesome  https://fontawesome.com/v4/icons/ */
+/* Es importante usar esta versón y sus íconos porque las versiones posteriores son pagas */
 @import url(./../Components/font-awesome/css/font-awesome.css);
 
 
