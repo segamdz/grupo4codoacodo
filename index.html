@@ -5,187 +5,178 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SurSolar</title>
-  <link href="./recursos/Images/icons/planeta.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="icon" type="image/x-icon" href="./recursos/Images/icons/favicon_io/favicon.ico">
   <!-- diseño del slider -->
   <link rel="stylesheet" href="./recursos/styles/slider.css">
-
 </head>
 
 <body>
   <div class="flex-container">
-    <header>
-      <!--         
-        ELIMINADO
-        -->
-    </header>
+    <div class="slides">
+      <section id="presentacion">
+        <div class="diapositiva">
+          <!-- <span>Aqui el video de entrada</span> -->
+          <video autoplay muted controls loop>
+            <source src="./recursos/media/9790069-sd_960_540_30fps.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="flomen">
+          <ul class="nav-menu">
+            <li><a href="#" class="pres">Home</a></li>
+            <li><a href="#" class="noso">Nosotros</a></li>
+            <li><a href="#" class="prod">Productos</a></li>
+            <li><a href="#" class="serv">Servicios</a></li>
+            <li><a href="#" class="cont">Contacto</a></li>
+          </ul>
+          <ul class="ensal-menu">
+            <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <section id="nosotros">
+        <div class="diapositiva">
+          <span>Un, muy breve, que hacemos</span>
+          <img src="./recursos/Images/reno1.png" alt="Energía Renovable" style="width: 100%; height: auto;">
+        </div>
+        <div class="flomen">
+          <ul class="nav-menu">
+            <li><a href="#" class="pres">Home</a></li>
+            <li><a href="#" class="noso">Nosotros</a></li>
+            <li><a href="#" class="prod">Productos</a></li>
+            <li><a href="#" class="serv">Servicios</a></li>
+            <li><a href="#" class="cont">Contacto</a></li>
+          </ul>
+          <ul class="ensal-menu">
+            <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <section id="Productos">
+        <div class="diapositiva">
+          <span>Fotos / videos / referencias de producto</span>
+          <a href="./recursos/html/Productos.html">
+            <img src="./recursos/Images/renob.png" alt="Turbinas de Viento" style="width: 100%; height: auto;">
+          </a>
+        </div>
+        <div class="flomen">
+          <ul class="nav-menu">
+            <li><a href="#" class="pres">Home</a></li>
+            <li><a href="#" class="noso">Nosotros</a></li>
+            <li><a href="./recursos/html/Productos.html">Productos</a></li>
+            <li><a href="#" class="serv">Servicios</a></li>
+            <li><a href="#" class="cont">Contacto</a></li>
+          </ul>
+          <ul class="ensal-menu">
+            <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <section id="Servicios">
+        <div class="diapositiva">
+          <span>Nuestras marcas</span>
+          <img src="./recursos/Images/Blackangel.jpg" alt="peces" style="width: 100%; height: auto;">
+        </div>
+        <div class="flomen">
+          <ul class="nav-menu">
+            <li><a href="#" class="pres">Home</a></li>
+            <li><a href="#" class="noso">Nosotros</a></li>
+            <li><a href="#" class="prod">Productos</a></li>
+            <li><a href="#" class="serv">Servicios</a></li>
+            <li><a href="#" class="cont">Contacto</a></li>
+          </ul>
+          <ul class="ensal-menu">
+            <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <section id="contacto">
+        <div class="diapositiva">
+          <img src="./recursos/Images/Producto.png" alt="Contacto" title="Contacto" style="width: 100%; height: auto;">
+        </div>
+        <div class="flomen">
+          <ul class="nav-menu">
+            <li><a href="#" class="pres">Home</a></li>
+            <li><a href="#" class="noso">Nosotros</a></li>
+            <li><a href="#" class="prod">Productos</a></li>
+            <li><a href="#" class="serv">Servicios</a></li>
+            <li><a href="#" class="cont">Contacto</a></li>
+          </ul>
+          <ul class="ensal-menu">
+            <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
+          </ul>
+        </div>
+        <div class="form-cont">
+          <div class="libre">
+            <h2 style="text-align: center;">Solicite presupuesto</h2>
+            <form action="/action_page.html">
+              <h3>Cotiza por:</h3>
+              <br>
+              <div class="radios">
+                <input type="radio" id="ventas" name="tipo" value="Ventas" style="margin-left: 10%;">
+                <label for="ventas">Ventas</label><br>
+                <input type="radio" id="servic" name="tipo" value="Servic" style="margin-left: 10%;">
+                <label for="servic">Servicio</label><br>
+                <br><br><br><br>
+              </div>
+              <h3>Su área:</h3>
+              <br>
+              <div class="areas">
+                <label for="area">Area:</label>
+                <select name="area" id="area">
+                  <option value="">Seleccione Area</option>
+                  <option value="sisal">Sistemas de Almacenamiento</option>
+                  <option value="bater">Baterias</option>
+                  <option value="panel">Paneles Solares</option>
+                  <option value="carga">Estaciones de Carga</option>
+                  <option value="inver">Inversores</option>
+                  <option value="kits">Kits</option>
+                  <option value="lampa">Lámparas Solares</option>
+                  <option value="Techo">Techos Solares</option>
+                  <option value="eolos">Turbinas Eólicas</option>
+                </select>
+              </div>
+              <br><br>
+              <input type="submit" value="Solicitar">
+            </form>
+          </div>
+          <div class="forma">
+            <h2 style="text-align: center;">Contáctenos</h2>
+            <form>
+              <input name="name" type="text" class="feedback-input" placeholder="Nombre">
+              <input name="email" type="text" class="feedback-input" placeholder="Correoe">
+              <textarea name="text" class="feedback-input" placeholder="Su tema de interés"
+                style="color: black;"></textarea>
+              <input type="submit" value="ENVIAR">
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="pie">
+        <div class="diapositiva">
+          <img src="./recursos/Images/fn.png" alt="footer" title="footer" style="width: 100%; height: auto;">
+        </div>
 
-    <body>
-      <div class="slides">
-        <section id="presentacion">
-          <div class="diapositiva">
-            <span class="fade-in-text" id="fade-in-text">Aqui el video de entrada</span>
-            <video width="100%" height="100%" autoplay muted controls loop>
-              <source src="./recursos/media/9790069-sd_960_540_30fps.mp4" type="video/mp4">
-            </video>
+        <div class="footer-nav-container">
+          <div class="copyright">
+            © 2024 SurSolar All rights reserved.
           </div>
-          <div class="flomen">
-            <ul class="nav-menu">
+          <div class="footer-nav">
+            <ul class="footer-navlinks">
               <li><a href="#" class="pres">Home</a></li>
               <li><a href="#" class="noso">Nosotros</a></li>
               <li><a href="#" class="prod">Productos</a></li>
               <li><a href="#" class="serv">Servicios</a></li>
               <li><a href="#" class="cont">Contacto</a></li>
             </ul>
-            <ul class="ensal-menu">
-              <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
-            </ul>
           </div>
-        </section>
-        <section id="nosotros">
-          <div class="diapositiva">
-            <span class="fade-in-text" id="fade-in-text">Un, muy breve, que hacemos</span>
-            <img src="./recursos/Images/reno1.png" alt="Energía Renovable" style="width: 100%; height: auto;">
-          </div>
-          <div class="flomen">
-            <ul class="nav-menu">
-              <li><a href="#" class="pres">Home</a></li>
-              <li><a href="#" class="noso">Nosotros</a></li>
-              <li><a href="#" class="prod">Productos</a></li>
-              <li><a href="#" class="serv">Servicios</a></li>
-              <li><a href="#" class="cont">Contacto</a></li>
-            </ul>
-            <ul class="ensal-menu">
-              <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
-            </ul>
-          </div>
-        </section>
-        <section id="Productos">
-          <div class="diapositiva">
-            <span class="fade-in-text" id="fade-in-text">Fotos / videos / referencias de producto</span>
-            <a href="./recursos/html/Productos.html">
-              <img src="./recursos/Images/renob.png" alt="Turbinas de Viento" style="width: 100%; height: auto;">
-            </a>
-          </div>
-          <div class="flomen">
-            <ul class="nav-menu">
-              <li><a href="#" class="pres">Home</a></li>
-              <li><a href="#" class="noso">Nosotros</a></li>
-              <li><a href="./recursos/html/Productos.html">Productos</a></li>
-              <li><a href="#" class="serv">Servicios</a></li>
-              <li><a href="#" class="cont">Contacto</a></li>
-            </ul>
-            <ul class="ensal-menu">
-              <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
-            </ul>
-          </div>
-        </section>
-        <section id="Servicios">
-          <div class="diapositiva">
-            <span>Nuestras marcas</span>
-            <img src="./recursos/Images/Blackangel.jpg" alt="peces" style="width: 100%; height: auto;">
-          </div>
-          <div class="flomen">
-            <ul class="nav-menu">
-              <li><a href="#" class="pres">Home</a></li>
-              <li><a href="#" class="noso">Nosotros</a></li>
-              <li><a href="#" class="prod">Productos</a></li>
-              <li><a href="#" class="serv">Servicios</a></li>
-              <li><a href="#" class="cont">Contacto</a></li>
-            </ul>
-            <ul class="ensal-menu">
-              <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
-            </ul>
-          </div>
-        </section>
-        <section id="contacto">
-          <div class="diapositiva">
-            <img src="./recursos/Images/Producto.png" alt="Contacto" title="Contacto"
-              style="width: 100%; height: auto;">
-          </div>
-          <div class="flomen">
-            <ul class="nav-menu">
-              <li><a href="#" class="pres">Home</a></li>
-              <li><a href="#" class="noso">Nosotros</a></li>
-              <li><a href="#" class="prod">Productos</a></li>
-              <li><a href="#" class="serv">Servicios</a></li>
-              <li><a href="#" class="cont">Contacto</a></li>
-            </ul>
-            <ul class="ensal-menu">
-              <li><a href="#">Ingrese <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-              <li><a href="#" class="alpi">Saber mas <i class="fa fa-address-card-o"></i></a></li>
-            </ul>
-          </div>
-          <div class="form-cont">
-            <div class="libre">
-              <h2 style="text-align: center;">Solicite presupuesto</h2>
-              <form action="/action_page.html">
-                <h3>Cotiza por:</h3>
-                <br>
-                <div class="radios">
-                  <input type="radio" id="ventas" name="tipo" value="Ventas" style="margin-left: 10%;">
-                  <label for="ventas">Ventas</label><br>
-                  <input type="radio" id="servic" name="tipo" value="Servic" style="margin-left: 10%;">
-                  <label for="servic">Servicio</label><br>
-                  <br><br><br><br>
-                </div>
-                <h3>Su área:</h3>
-                <br>
-                <div class="areas">
-                  <label for="Area">Area:</label>
-                  <select name="area" id="area">
-                    <option value="">Seleccione Area</option>
-                    <option value="sisal">Sistemas de Almacenamiento</option>
-                    <option value="bater">Baterias</option>
-                    <option value="panel">Paneles Solares</option>
-                    <option value="carga">Estaciones de Carga</option>
-                    <option value="inver">Inversores</option>
-                    <option value="kits">Kits</option>
-                    <option value="lampa">Lámparas Solares</option>
-                    <option value="Techo">Techos Solares</option>
-                    <option value="eolos">Turbinas Eólicas</option>
-                  </select>
-                </div>
-                <br><br>
-                <input type="submit" value="Solicitar">
-              </form>
-            </div>
-            <div class="forma">
-              <h2 style="text-align: center;">Contáctenos</h2>
-              <form>
-                <input name="name" type="text" class="feedback-input" placeholder="Nombre" />
-                <input name="email" type="text" class="feedback-input" placeholder="Correoe" />
-                <textarea name="text" class="feedback-input" placeholder="Su tema de interés"
-                  style="color: black;"></textarea>
-                <input type="submit" value="ENVIAR" />
-              </form>
-            </div>
-          </div>
-        </section>
-        <section id="pie">
-          <div class="diapositiva">
-            <img src="./recursos/Images/fn.png" alt="footer" title="footer" style="width: 100%; height: auto;">
-          </div>
-
-          <div class="footer-nav-container">
-            <div class="copyright">
-              © 2024 SurSolar All rights reserved.
-            </div>
-            <div class="footer-nav">
-              <ul class="footer-navlinks">
-                <li><a href="#" class="pres">Home</a></li>
-                <li><a href="#" class="noso">Nosotros</a></li>
-                <li><a href="#" class="prod">Productos</a></li>
-                <li><a href="#" class="serv">Servicios</a></li>
-                <li><a href="#" class="cont">Contacto</a></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
+    </div>
   </div>
   <script src="./recursos/scripts/slider.js"></script>
   <script>

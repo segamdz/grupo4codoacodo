@@ -113,6 +113,10 @@ body {
   padding-top: 20%;
 }
 
+.overlay .closebtn {
+	float: right;
+	}
+
 .overlay a {
   padding: 8px;
   text-decoration: none;
@@ -125,6 +129,11 @@ body {
   color: #f1f1f1;
 }
 
+.TopNav a> span:hover {
+	background-color: white
+}
+
+
 
 .TopNav li {
 	float:none;
@@ -132,6 +141,10 @@ body {
 
 .TopNav li a:hover {
 	background-color: #111
+}
+
+.SubPro a {
+	color: rgb(197, 197, 24);
 }
 
 #carouselProductos {
@@ -143,6 +156,76 @@ body {
 	width: 2%
 }
 
+.container-Flex {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw
+}
+
+.footer-navlinks {
+	padding-right: 5%;
+	float: right
+}
+
+.footer-title {
+	height: 2vh;
+	font-weight: 700;
+	color: #f8f8e5;
+	margin-bottom: 1vh
+}
+
+.footer-container {
+	width: 100%;
+	background-color: #000;
+	padding-bottom: 15px;
+	clear: both
+}
+
+.footer-nav-container {
+  display: flex;
+  flex-direction: row;
+
+  height: 10vh;
+  width: 100vw;
+  background-color: #073bb3;
+  bottom: 0;
+  z-index: 3;
+}
+
+.copyright {
+  width: 30%;
+  font-weight: bold;
+  text-align: center;
+  color: yellow;
+  float: left;
+  margin: auto;
+}
+
+.footer-nav {
+	width: 70%;
+	margin: auto;
+}
+
+.footer-navlinks {
+  color: #ffffff;
+	display:inline;
+}
+
+.footer-navlinks>li {
+  display:inline ;
+  line-height: 1em;
+}
+
+.footer-navlinks li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-navlinks a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
 @media screen and (min-width: 1152px) {
 	.login {
 		font-size: 1.5em;
@@ -159,21 +242,29 @@ body {
 	.overlay .closebtn {
 		font-size: 2em;
 		top: 2vh;
-		right: 3.5 vw;
 		}
 	
 	.TopNav a>span {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	
   .SubPro a {
-		color: rgb(197, 197, 24);
 		font-size: 1em;
+  }
+
+  .copyright {
+    font-size: 1em;
   }
 
 	.footer-title {
 		font-size: 1em;
 	}
+
+  .footer-navlinks li a {
+    font-size: 1.5em;
+		padding-right: 2.8125em;
+		max-width: 7.5em;
+  }
 
 }
 
@@ -193,21 +284,30 @@ body {
 	.overlay .closebtn {
 		font-size: 1.3em;
 		top: 1.3vh;
-		right: 2.275vw;
 		}
 	
 	.TopNav a>span {
-		font-size: .65em;
+		font-size: .975em;
 	}
 	
   .SubPro a {
-		color: rgb(197, 197, 24);
 		font-size: .65em;
+  }
+
+  .copyright {
+    font-size: 0.65em;
   }
 
 	.footer-title {
 		font-size: .65em;
 	}
+
+  .footer-navlinks li a {
+    font-size: .975em;
+		padding-right: 1.828125em;
+		max-width: 4.875em;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -226,80 +326,29 @@ body {
 	.overlay .closebtn {
 		font-size: .9em;
 		top: .9vh;
-		right: 1.575vw;
 		}
 	
 	.TopNav a>span {
-		font-size: .45em;
+		font-size: .675em;
 	}
 
   .SubPro a {
-		color: rgb(197, 197, 24);
 		font-size: .45em;
+  }
+
+  .copyright {
+    font-size: 0.45em;
   }
 
 	.footer-title {
 		font-size: .45em;
 	}
+
+  .footer-navlinks li a {
+    font-size: .675em;
+		padding-right: 1.265625em;
+		max-width: 3.375em;
+  }
+
 }
 
-.container-Flex {
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-	width: 100vw
-}
-
-.footer-navlinks {
-	padding-right: 5%;
-	max-width: 180px;
-	float: right
-}
-
-.footer-title {
-	height: 2vh;
-	font-weight: 700;
-	color: #f8f8e5;
-	margin-bottom: 1vh
-}
-
-.footer-container {
-	width: 100%;
-	background-color: #000;
-	padding-bottom: 15px;
-	clear: both
-}
-
-.footer {
-	width: 100vw;
-	padding: 20px 0;
-	margin: auto;
-	clear: both
-}
-
-.footer a {
-	color: #fff;
-	padding: 0 12px;
-	text-decoration: none
-}
-
-.footer a:hover {
-	color: #fff;
-	padding: 0 12px
-}
-
-.footer-nav-container{
-	margin-top: 5vh;
-	display: inline-flex;
-	height: 15vh;
-}
-
-.copyright{
-	width: 40vw;
-	float: left;
-}
-
-.footer-nav{
-	width: 60vw;
-	float: right;
-}
