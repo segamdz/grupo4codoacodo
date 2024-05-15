@@ -151,7 +151,7 @@
 
 .casillas-III:hover>.card {
   cursor: pointer;
-  transform: rotateY(180deg) rotateZ(-180deg);
+  transform: rotateY(180deg);
 }
 
 .card {
@@ -187,7 +187,7 @@
 .back{
   color: #000000;
   background-color: #bbb9a5;
-  transform: rotateY(180deg) rotateZ(-180deg);
+  transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
