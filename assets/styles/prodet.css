@@ -13,7 +13,9 @@
 }
 
 .grid-container>div {
-  text-align: center;
+  /* text-align: center; */
+  align-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -79,6 +81,17 @@
   padding-top: 1vh;
 }
 
+div .leftnav-wrapper .inCom {
+  display: flex;
+  max-width: 90%;
+  margin: 1vh 1vw;
+  padding-top: 1vh;
+}
+
+div .leftnav-wrapper .inCom p {
+  text-align: justify;
+}
+
 .leftnav-links2 {
   color: #000000;
   text-align: left;
@@ -128,12 +141,14 @@
   max-height: 100%;
 }
 
-.casillas leyenda {
+.casillas .leyenda {
   grid-row-start: 5;
   grid-row-end: 5;
-  height: 20%;
+  /* height: 20%; */
   color: white;
-  background-color: grey;
+  /* background-color: grey; */
+  align-content: center;
+  text-align: center;
 }
 
 .grid-container-III {
@@ -173,18 +188,23 @@
 }
 
 .front {
+  display: flex;
   align-content: center;
+  align-items: center;
   background-color: #bbb9a5;
 }
 
 .front img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 97%;
+  max-height: 97%;
   border-radius: 1em;
   object-fit: cover;
+  margin-top: .25em;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.back{
+.back {
   color: #000000;
   background-color: #bbb9a5;
   transform: rotateY(180deg);
@@ -192,6 +212,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: justify;
+  padding-left: .125em;
+  padding-right: .125em;
+}
+
+.back h3 {
+  font-weight: bold;
+}
+
+.back .asomo {
+  display: inline-block;
+}
+
+.back .manImg {
+  display: none;
+}
+
+.back .hover-text:hover~.manImg {
+  display: block;
 }
 
 .item6 {
@@ -289,7 +328,12 @@
     font-size: 1.5em;
   }
 
-  .casillas-III .leyenda>a {
+  .back h3 {
+    font-size: 1.8em;
+  }
+
+  .back p,
+  .back .cont {
     font-size: 1.5em;
   }
 
@@ -334,6 +378,10 @@
     font-size: 1.3em;
   }
 
+  .leftnav-wrapper p {
+    text-align: justify;
+  }
+
   .leftnav-links2 {
     margin: 1.3vh .65vw 1.3vh .65vw;
     font-size: .975em;
@@ -343,7 +391,12 @@
     font-size: .975em;
   }
 
-  .casillas-III .leyenda>a {
+  .back h3 {
+    font-size: 1.17em;
+  }
+
+  .back p,
+  .back .cont {
     font-size: .975em;
   }
 
@@ -397,7 +450,12 @@
     font-size: .675em;
   }
 
-  .casillas-III .leyenda>a {
+  .back h3 {
+    font-size: .81em;
+  }
+
+  .back p,
+  .back .cont {
     font-size: .675em;
   }
 

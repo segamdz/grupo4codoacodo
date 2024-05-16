@@ -20,7 +20,6 @@ body {
   display: flexbox;
   height: 100%;
   width: 50%;
-  color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
@@ -56,8 +55,18 @@ body {
   margin-top: 10%;
 }
 
-.feedback-input {
+#contacto .form-cont .forma .feedback-input {
+  border: solid #CC6666;
   color: white;
+}
+
+#contacto .form-cont .libre .feedback-input {
+  border: solid #CC6666;
+  color: black;
+}  
+
+
+.feedback-input {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
   background-color: transparent;
@@ -108,7 +117,7 @@ textarea {
     padding: 0.625em;
     border-radius: 5px;
     line-height: 22px;
-    border: 2px solid #CC6666;
+    border: .125em solid #CC6666;
   }
 
   #contacto .form-cont .forma {
@@ -119,7 +128,7 @@ textarea {
     font-size: 1.125em;
     border-radius: .3125em;
     line-height: 1.375em;
-    border: .125em solid #CC6666;
+    border: .125em;
     padding: .8125em;
     margin-bottom: .9375em;
   }
