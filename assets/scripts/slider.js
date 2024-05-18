@@ -186,8 +186,8 @@ let slider = function (sliderElement) {
     if (document.activeElement.className == "prod") {
       gotoSlide("#Productos");
     }
-    if (document.activeElement.className == "serv") {
-      gotoSlide("#Servicios");
+    if (document.activeElement.className == "marc") {
+      gotoSlide("#marcas");
     }
     if (document.activeElement.className == "cont") {
       gotoSlide("#contacto");

@@ -65,9 +65,7 @@
 
 .field .item {
   width: 100%;
-  padding: .625em;
   background: transparent;
-  border: solid #CC6666;
   outline: none;
 }
 
@@ -154,7 +152,7 @@ textarea {
 
   .field .item {
     padding: 1.125em;
-    border: .125em;
+    border: .125em solid #CC6666;
     border-radius: .375em;
     font-size: 1em;
     margin: .75em 0;
@@ -218,7 +216,7 @@ textarea {
 
   .field .item {
     padding: .73125em;
-    border: .08125em;
+    border: .08125 solid #CC6666;
     border-radius: .24375em;
     font-size: .65em;
     margin: .4875em 0;
@@ -280,7 +278,7 @@ textarea {
 
   .field .item {
     padding: .50625em;
-    border: .05625em;
+    border: .05625 solid #CC6666;
     border-radius: .16875em;
     font-size: .45em;
     margin: .2025em 0;

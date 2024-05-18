@@ -86,7 +86,7 @@ section .flomen {
 }
 
 .nav-menu li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
@@ -95,7 +95,7 @@ section .flomen {
 }
 
 .ensal-menu li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
 }
 
