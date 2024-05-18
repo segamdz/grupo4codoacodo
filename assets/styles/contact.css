@@ -1,8 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-body {
-  background: rgb(30, 30, 40);
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 
 #contacto .form-cont {
@@ -49,21 +45,44 @@ body {
   width: 50%;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 500;
+  text-align: center;
+  color: black;
 }
 
-#contacto .form-cont .forma>form {
+#contacto .form-cont .forma form {
   margin-top: 10%;
 }
 
-#contacto .form-cont .forma .feedback-input {
+#contacto .form-cont .forma .input-box {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#contacto .form-cont .forma .input-box .input-field{
+  width: 48.55%;
+}
+
+.field .item {
+  width: 100%;
+  padding: .625em;
+  background: transparent;
   border: solid #CC6666;
-  color: white;
+  outline: none;
+}
+
+.field .item::placeholder {
+  color: rgba(255,255,255,.3);
+}
+
+form .textarea-field .item{
+  resize: none;
 }
 
 #contacto .form-cont .libre .feedback-input {
   border: solid #CC6666;
   color: black;
-}  
+}
 
 
 .feedback-input {
@@ -133,6 +152,14 @@ textarea {
     margin-bottom: .9375em;
   }
 
+  .field .item {
+    padding: 1.125em;
+    border: .125em;
+    border-radius: .375em;
+    font-size: 1em;
+    margin: .75em 0;
+  }
+
   .feedback-input:focus {
     border: .125em solid #CC4949;
   }
@@ -189,8 +216,12 @@ textarea {
     margin-bottom: .609375em;
   }
 
-  .feedback-input:focus {
-    border: .08125em solid #CC4949;
+  .field .item {
+    padding: .73125em;
+    border: .08125em;
+    border-radius: .24375em;
+    font-size: .65em;
+    margin: .4875em 0;
   }
 
   textarea {
@@ -246,6 +277,15 @@ textarea {
     margin-bottom: .421875em;
   }
 
+
+  .field .item {
+    padding: .50625em;
+    border: .05625em;
+    border-radius: .16875em;
+    font-size: .45em;
+    margin: .2025em 0;
+  }
+
   .feedback-input:focus {
     border: .05625em solid #CC4949;
   }
@@ -254,6 +294,7 @@ textarea {
     height: 1.08em;
     line-height: 67.5%;
   }
+
   [type="submit"] {
     border-radius: .140625em;
     font-size: .675em;

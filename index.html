@@ -64,8 +64,10 @@
           <ul class="nav-menu">
             <li><a href="#" class="pres">Home</a></li>
             <li><a href="#" class="noso">Nosotros</a></li>
-            <li><a href="./assets/html/Productos.html">Productos <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
-            <li><a href="./assets/html/Servicios.html">Servicios<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+            <li><a href="./assets/html/Productos.html">Productos <i class="fa fa-external-link"
+                  aria-hidden="true"></i></a></li>
+            <li><a href="./assets/html/Servicios.html">Servicios<i class="fa fa-external-link"
+                  aria-hidden="true"></i></a></li>
             <li><a href="#" class="cont">Contacto</a></li>
           </ul>
           <ul class="ensal-menu">
@@ -149,11 +151,27 @@
           </div>
           <div class="forma">
             <h2 style="text-align: center;">Contáctenos</h2>
-            <form>
-              <input name="cName" type="text" class="feedback-input" placeholder="Nombre">
-              <input name="cEmail" type="text" class="feedback-input" placeholder="Correoe">
-              <textarea name="text" class="feedback-input" placeholder="Su tema de interés"
-                style="color: black;"></textarea>
+            <form action='#'>
+              <div class="input-box">
+                <div class="input-field field">
+                  <input type="text" placeholder="Nombre" id="nombre" class="item" autocomplete="off">
+                </div>
+                <div class="input-field field">
+                  <input type="text" placeholder="Correoe" id="email" class="item" autocomplete="off">
+                </div>
+              </div>
+              <div class="input-box">
+                <div class="input-field field">
+                  <input type="text" placeholder="Teléfono" id="phone" class="item" autocomplete="off">
+                </div>
+                <div class="input-field field">
+                  <input type="text" placeholder="Asunto" id="subject" class="item" autocomplete="off">
+                </div>
+              </div>
+              <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Su mensaje" class="item"
+                  autocomplete="off"></textarea>
+              </div>
               <input type="submit" value="ENVIAR">
             </form>
           </div>
@@ -182,6 +200,7 @@
     </div>
   </div>
   <script src="./assets/scripts/slider.js"></script>
+  <script src="./assets/scripts/contact.js"></script>
   <script>
     let mySlider = slider('.slides');
   </script>
