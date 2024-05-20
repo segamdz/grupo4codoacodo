@@ -218,6 +218,16 @@ section .diapositiva>video {
   height: 100%;
 }
 
+section .diapositiva .demarcas {
+  position: absolute;
+  top: 5vh;
+  left: 5vh;
+  max-width: 90vw;
+  max-height: 90vh;
+  /* z-index: 3; */
+}
+
+
 .flex-container {
   display: flex;
   flex-direction: column;
