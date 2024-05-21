@@ -36,7 +36,7 @@
       </section>
       <section id="nosotros">
         <div class="diapositiva">
-          <span>Un, muy breve, que hacemos</span>
+          <span>Sebas, por favor. Un, muy breve, que hacemos</span>
           <img src="./assets/Images/slider/reno1.webp" alt="Energía Renovable" style="width: 100%; height: auto;">
         </div>
         <div class="flomen">
@@ -55,7 +55,7 @@
       </section>
       <section id="Productos">
         <div class="diapositiva">
-          <span>Fotos / videos / referencias de producto</span>
+          <!-- <span>Fotos / videos / referencias de producto</span> -->
           <a href="./assets/html/Productos.html">
             <img src="./assets/Images/slider/renob.webp" alt="Turbinas de Viento" style="width: 100%; height: auto;">
           </a>
@@ -80,7 +80,9 @@
       <section id="marcas">
         <div class="diapositiva">
           <img src="./assets/Images/slider/lampara-de-estudio.webp" alt="Lampara" style="width: 100%; height: auto;">
-          <img src="./assets/Images/slider/marcas.webp" class="demarcas">
+          <div class="demarcas">
+            <img src="./assets/Images/slider/marcas.webp" height="100%" width="100%">
+          </div>
         </div>
         <div class="flomen">
           <ul class="nav-menu">
@@ -98,7 +100,8 @@
       </section>
       <section id="contacto">
         <div class="diapositiva">
-          <img src="./assets/Images/slider/Producto.webp" alt="Contacto" title="Contacto" style="width: 100%; height: auto;">
+          <img src="./assets/Images/slider/Producto.webp" alt="Contacto" title="Contacto"
+            style="width: 100%; height: auto;">
         </div>
         <div class="flomen">
           <ul class="nav-menu">
@@ -182,7 +185,52 @@
         <div class="diapositiva">
           <img src="./assets/Images/slider/fn.webp" alt="footer" title="footer" style="width: 100%; height: auto;">
         </div>
-
+        <div class="cartelera">
+          <div class="carteles">
+            <div id="leyenda">
+              <h3>No me acuerdo que iba aqui</h3>
+            </div>
+            <div id="addendum">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nihil magni magnam dolorum quasi cum doloremque. Consectetur nobis sit fugit praesentium, quod nihil provident placeat. Voluptate esse quae optio cum.</p>
+              <p style="color: white; padding: 8%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nihil magni magnam dolorum quasi cum doloremque. Consectetur nobis sit fugit praesentium, quod nihil provident placeat. Voluptate esse quae optio cum.</p>
+              <p style="color: white; padding: 8%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nihil magni magnam dolorum quasi cum doloremque. Consectetur nobis sit fugit praesentium, quod nihil provident placeat. Voluptate esse quae optio cum.</p>
+            </div>
+          </div>
+          <div class="carteles">
+            <div id="leyenda">
+              <h3>Donde estamos:</h3>
+            </div>
+            <div id="mapa">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.520843750916!2d-64.13309772416385!3d10.459544864957076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c326f00573e2daf%3A0xddab2dc44f3426e2!2sSurSolar!5e0!3m2!1ses!2sve!4v1716261135531!5m2!1ses!2sve"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+          <div class="carteles">
+            <div id="leyenda">
+              <h3>Colaboradores:</h3>
+            </div>
+            <div class="parches">
+              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+                data-type="HORIZONTAL" data-vanity="syssfc" data-version="v1"><a class="badge-base__link LI-simple-link"
+                  href="https://ve.linkedin.com/in/syssfc/en?trk=profile-badge">Enrique Alberto Sifontes Romo</a>
+              </div>
+            </div>
+            <div class="parches">
+              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+                data-type="HORIZONTAL" data-vanity="syssfc" data-version="v1"><a class="badge-base__link LI-simple-link"
+                  href="https://ve.linkedin.com/in/syssfc/en?trk=profile-badge">Enrique Alberto Sifontes Romo</a>
+              </div>
+            </div>
+            <div class="parches">
+              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
+                data-type="HORIZONTAL" data-vanity="syssfc" data-version="v1"><a class="badge-base__link LI-simple-link"
+                  href="https://ve.linkedin.com/in/syssfc/en?trk=profile-badge">Enrique Alberto Sifontes Romo</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="footer-nav-container">
           <div class="copyright">
             © 2024 SurSolar All rights reserved.
@@ -202,6 +250,7 @@
   </div>
   <script src="./assets/scripts/slider.js"></script>
   <script src="./assets/scripts/contact.js"></script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
   <script>
     let mySlider = slider('.slides');
   </script>
